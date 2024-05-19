@@ -5,6 +5,7 @@
 //         console.log('play')
 
 
+
 //     }
 // }
 
@@ -188,3 +189,108 @@
 // var entries = Object.entries(person)
 // console.log(entries)
 
+//*****math object***
+
+// var x = 20
+// var y = 30
+
+// console.log(Math.min(x, y, 40, 60))
+// console.log(Math.max(x, y, 40, 60))
+// console.log(Math.floor(20.9))
+// console.log(Math.floor(20.1))
+// console.log(Math.ceil(20.1))
+// console.log(Math.ceil(20.8))
+// console.log(Math.round(20.8))
+// console.log(Math.round(20.5))
+// console.log(Math.round(20.4))
+// console.log(Math.floor(Math.random()))
+// console.log(Math.ceil(Math.random()))
+// console.log(Math.floor(Math.random() * 10))
+// console.log(Math.floor(Math.random() * 100))
+// console.log(Math.floor(Math.random() * 1000))
+// console.log(Math.floor(Math.random() * 10000))
+// console.log(Math.pow(10, 2))
+// console.log(Math.sqrt(25))
+// console.log(Math.sqrt(9))
+
+// console.log(Math)
+
+// ***interview question**
+
+// // console.log(x)  //x is not defined (it is not in the memory)
+// x = 100  // here we did't use var,let,const keywords
+// console.log(x)
+
+// ***date object ***
+
+// var now = new Date()
+// console.log(now)
+
+// // get methods:
+// console.log(now.getDate())
+// console.log(now.getFullYear())
+// console.log(now.getMonth())
+// console.log(now.getHours())
+// console.log(now.getMinutes())
+
+// // set methods:
+
+// now.setFullYear(2050)
+// now.setDate(20)
+// now.setMonth(11)
+
+// console.log(now)
+// console.log(now.getDate())
+// console.log(now.getFullYear())
+// console.log(now.getMonth())
+
+
+// var date1 = new Date(2040, 6, 20, 10, 20, 40) //number data type
+// console.log(date1)
+
+// // get method
+
+// console.log(date1.getFullYear())
+// console.log(date1.getDate())
+// console.log(date1.getMonth())
+// console.log(date1.getHours())
+// console.log(date1.getMinutes())
+// console.log(date1.getSeconds())
+
+// // set methods:
+
+// date1.setFullYear(2000)
+// date1.setDate(10)
+// date1.setMonth(10)
+// console.log(date1)
+
+// var date2 = new Date('1990 dec 31 9:15:30')
+// console.log(date2)
+// console.log(date2.getFullYear())
+// console.log(date2.getMonth())
+// console.log(date2.getDate())
+// console.log(date2.getDay())
+// console.log(date2.getHours())
+// console.log(date2.getMinutes())
+// console.log(date2.getSeconds())
+
+// // get methods:
+
+// date2.setFullYear(2018)
+// date2.setMonth(2)
+// date2.setDate(20)
+// date2.setHours(5)
+// date2.setMinutes(40)
+
+// console.log(date2)   
+
+
+//*****template string****
+
+var name = 'sachin'
+var age = 40
+//without string literals(concat)
+console.log('Hi' + " " + name + " " + 'How are you ?' + " " + 'age is ' + age)
+//with string literals
+
+console.log(`Hi ${name} how are you ? age is ${age}`)
