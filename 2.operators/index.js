@@ -22,13 +22,13 @@
 // console.log(x)
 
 // 2.assignment operator(=):
-// var x = 10
+var x = 3
 // console.log(x += 5)
 // console.log(x -= 5)
-// console.log(x *= 5)
+// console.log(x *= 9)
 // console.log(x /= 5)
 // console.log(x %= 5)
-// console.log(x **= 5)
+console.log(x **= 5)
 
 // 3.comparison operator
 
@@ -44,7 +44,7 @@
 
 // equality operator
 
-// var x=10
+// var x = 10
 // var y = 11
 // var y = 10
 // var y = '10'
@@ -87,9 +87,9 @@
 
 // 5.logical operator
 
-var income = true
-// // var cibil = true
-var cibil = false
+// var income = true
+// // // var cibil = true
+// var cibil = false
 
 // var hdfccreditCard = income && cibil
 
@@ -99,5 +99,5 @@ var cibil = false
 // console.log(rbiccreditCard)
 
 
-console.log(!income)
-console.log(!cibil)
+// console.log(!income)
+// console.log(!cibil)
