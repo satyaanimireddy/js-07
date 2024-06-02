@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent {
+            width: 200px;
+            height: 200px;
+            background-color: #208e65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #child {
+            width: 150px;
+            height: 150px;
+            background-color: #11b53a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #subChild {
+            width: 100px;
+            height: 100px;
+            background-color: #7e17be;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="parent">
+        <div id="child">
+            <div id="subChild"></div>
+        </div>
+    </div>
+    <script src="./Events.js"></script>
+</body>
+
+</html>

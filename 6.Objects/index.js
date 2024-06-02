@@ -223,8 +223,8 @@
 
 // ***date object ***
 
-// var now = new Date()
-// console.log(now)
+var now = new Date()
+console.log(now)
 
 // // get methods:
 // console.log(now.getDate())
@@ -232,14 +232,15 @@
 // console.log(now.getMonth())
 // console.log(now.getHours())
 // console.log(now.getMinutes())
+// console.log(now.getMilliseconds())
 
 // // set methods:
 
-// now.setFullYear(2050)
-// now.setDate(20)
-// now.setMonth(11)
+now.setFullYear(2050)
+now.setDate(20)
+now.setMonth(4)
 
-// console.log(now)
+console.log(now)
 // console.log(now.getDate())
 // console.log(now.getFullYear())
 // console.log(now.getMonth())
@@ -282,15 +283,15 @@
 // date2.setHours(5)
 // date2.setMinutes(40)
 
-// console.log(date2)   
+// console.log(date2)
 
 
 //*****template string****
 
-var name = 'sachin'
-var age = 40
-//without string literals(concat)
-console.log('Hi' + " " + name + " " + 'How are you ?' + " " + 'age is ' + age)
-//with string literals
+// var name = 'sachin'
+// var age = 40
+// //without string literals(concat)
+// console.log('Hi' + " " + name + " " + 'How are you ?' + " " + 'age is ' + age)
+// //with string literals
 
-console.log(`Hi ${name} how are you ? age is ${age}`)
+// console.log(`Hi ${name} how are you ? age is ${age}`)
