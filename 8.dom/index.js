@@ -17,7 +17,7 @@
 // **id
 
 // var element = document.getElementById('myid-1')
-// var para2 = document.getElementById('myid-2')
+// // var para2 = document.getElementById('myid-2')
 
 // element.style.background = 'red'
 // element.style.color = 'white'
@@ -45,6 +45,7 @@
 // for (var value of element) {
 //     console.log(value)
 //     value.style.background = 'blue'
+//     value.style.color = 'white'
 // }
 
 // ** tag**
@@ -53,7 +54,7 @@
 // console.log(element)
 
 // console.log(element[0].style.color = 'red')
-// console.log(element[1])
+// console.log(element[1].style.color = 'blue')
 
 //**query selector *
 
@@ -74,14 +75,14 @@
 
 // *** traversing of Dom: ***
 
-var currentElement = document.getElementById('currentdiv')
-console.log(currentElement)
+// var currentElement = document.getElementById('currentdiv')
+// console.log(currentElement)
 
 // //* element to parent
 
-var parent = currentElement.parentElement
+// var parent = currentElement.parentElement
 // parent.style.background = 'blue'
-console.log(parent)
+// console.log(parent)
 
 // // * element to previous sibling
 
@@ -93,7 +94,7 @@ console.log(parent)
 // // * element to next sibling
 
 // var nextSibling = currentElement.nextElementSibling
-// nextSibling.style.color = 'yellow'
+// nextSibling.style.color = 'green'
 // console.log(preSibling)
 
 // // * element to child
@@ -104,10 +105,11 @@ console.log(parent)
 // var children = currentElement.children
 
 // firstChild.style.color = 'yellow'
-// lastChild.style.color = 'cyan'
+// lastChild.style.color = 'red'
 
-// // children[0].style.background = 'yellow'
-// // children[1].style.background = 'yellow'
+// children[0].style.background = 'yellow'
+// children[1].style.background = 'yellow'
+// children[2].style.background = 'yellow'
 
 // // or
 
@@ -117,40 +119,6 @@ console.log(parent)
 // }
 
 // **** how to create and add events ***
-
-// var para = document.createElement('p')
-
-// para.id = 'myid'
-// para.className = 'myclass'
-
-// para.innerHTML = 'this is para'
-// // // console.log(para)
-
-
-// // // or
-
-// var paraText = document.createTextNode('this is para')
-// console.log(paraText)
-
-// para.appendChild(paraText)
-
-// var body = document.getElementById('body')
-// console.log(body)
-
-// // body.appendChild(paraText)
-
-// var h4 = document.createElement('h4')
-
-// console.log(h4)
-// h4.id = 'myh4'
-// h4.className = 'myh4class'
-
-// // // h4.innerHTML = 'this is heading four'  //or
-
-// var h4Text = document.createTextNode('this is heading four')
-// h4.appendChild(h4Text)
-
-// body.appendChild(h4Text)
 
 
 // ********
@@ -237,7 +205,7 @@ console.log(parent)
 
 // var deleteBtn = document.getElementById('delete')
 // function deleteFun() {
-//     body.appendChild()
+//     body.removeChild(para)
 
 // }
 
@@ -245,7 +213,166 @@ console.log(parent)
 
 
 
-// *** event handling in js **** //
 
 
 
+// // //    * from git ** How to create and add elements to dom ***
+
+var para = document.createElement('p')
+
+console.log(para)
+
+para.id = 'myid'
+
+para.className = 'myclass'
+
+// para.innerHTML = 'this is para'
+
+var paraText = document.createTextNode('this is para')
+console.log(paraText)
+
+para.appendChild(paraText)
+
+var body = document.getElementById('body')
+console.log(body)
+
+var addAfterBtn = document.getElementById('addafter')
+console.log(addAfterBtn)
+
+console.log(para);
+function addAfter() {
+    body.appendChild(para)
+}
+
+addAfterBtn.addEventListener('click', addAfter)
+
+
+var h1 = document.createElement('h1')
+
+h1.id = 'myh1id'
+h1.className = 'myh1class'
+
+h1.innerHTML = 'This is heading one'
+
+
+var addBeforeBtn = document.getElementById('addbefore')
+// console.log(body);
+function addBeforeFun() {
+    body.insertBefore(h1, body[0])
+}
+addBeforeBtn.addEventListener('click', addBeforeFun)
+
+//  // ***How to replace child in dom
+
+var div = document.createElement('div')
+
+div.id = 'mydiv'
+
+div.innerHTML = 'this is div'
+
+
+var updateBtn = document.getElementById('update')
+
+function update() {
+
+    body.replaceChild(div, h1)
+}
+updateBtn.addEventListener('click', update)
+
+var deleteBtn = document.getElementById('delete')
+
+function deleteFun() {
+    // para.remove()
+
+    body.removeChild(para)
+}
+
+deleteBtn.addEventListener('click', deleteFun)
+
+
+// my practice***
+
+// var h1 = document.createElement('h1')
+// h1.id = "myId"
+// h1.className = "myClass"
+// h1.innerHTML = "This is heading"
+
+// var body = document.getElementById('body')  //we can get element by using id
+// body.appendChild(h1)
+// or
+// document.body.appendChild(h1);   //instead of above 2 lines we can use this
+
+
+
+// // or
+// var textnode = document.createTextNode('This is Heading')
+// console.log(textnode);
+// var body = document.getElementById('body')
+// console.log(body);
+
+// body.appendChild(textnode)
+
+// // console.log(h1);
+
+// *from w3*Create a text node and append it to the document:
+
+// const textNode = document.createTextNode("Hello World");
+// document.body.appendChild(textNode);
+
+// **Create a <h1> element with a text node:
+
+
+// const h1 = document.createElement("h1");
+// const textNode = document.createTextNode("Hello World");
+// h1.appendChild(textNode);
+// console.log(h1);
+
+// var body = document.getElementById('body')
+// body.appendChild(h1)
+//or
+// document.body.appendChild(h1);
+
+//** Create a <p> element with a text node:
+
+
+// const para = document.createElement("p");
+// const textNode = document.createTextNode("Hello World");
+// para.appendChild(textNode);
+// document.body.appendChild(para);
+
+// **w3schools* insertBefore  :
+
+// const newNode = document.createElement("li");
+// const textNode = document.createTextNode("Water");
+// newNode.appendChild(textNode);
+// console.log(newNode);
+
+
+// const list = document.getElementById("myList");
+// list.insertBefore(newNode, list.children[0]);
+// // list.appendChild(newNode)
+// console.log(list);
+
+// ---w3sc insertBefore------
+
+// var ul = document.createElement('ul')
+// // ul.id = "myDiv"
+// var li = document.createElement("li")
+// var textnode = document.createTextNode("water")
+// li.appendChild(textnode)
+// ul.appendChild(li)
+
+// body = document.getElementById("body")
+// body.appendChild(ul)
+// //or
+// // document.body.appendChild(ul)
+
+// var li2 = document.createElement("li")
+// var li2Text = document.createTextNode("oil")
+// li2.appendChild(li2Text)
+
+// console.log(li2);
+// ul.insertBefore(li2, ul.children[0])  //or
+// // ul.insertBefore(li2, null)  //
+
+// console.log(ul);

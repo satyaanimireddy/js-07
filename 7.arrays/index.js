@@ -288,7 +288,7 @@
 
 // =>**how to remove duplicates in array
 
-var arr = [1, 2, 3, 2, 4, 2, 5]
+// var arr = [1, 2, 3, 2, 4, 2, 5]
 
 // Set with spread:
 
@@ -398,18 +398,18 @@ var arr = [1, 2, 3, 2, 4, 2, 5]
 
 // **array.from
 
-var str = 'hello'
+// var str = 'hello'
 // var obj = {
-//     length: 10
+//     length: 1
 // }
-console.log(str)
+// console.log(str)
 // console.log(obj)
-var result = Array.from(str)  //it will convert into array
+// var result = Array.from(str)  //it will convert into array
 
 // var result = Array.from(obj) //it will convert into array
-// var result = Array.from(obj, (v, i) => {
-//     return i  //it will give index numbers,v isthe undefined
-// })  //it will
+var result = Array.from(obj, (v, i) => {
+    return i  //it will give index numbers,v isthe undefined
+})  //it will
 console.log(result)
 
 // function test() {

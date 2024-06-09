@@ -25,7 +25,6 @@ var parent = document.getElementById('parent')
 
 function subChildFun(e) {
     console.log('sub child clicked')
-
     //event properties
     e.stopPropagation()
     console.log(e)
@@ -33,13 +32,11 @@ function subChildFun(e) {
     console.log(e.clientY)
     console.log(e.offsetX)
     console.log(e.offsetY)
-
 }
 
 function childFun(e) {
     console.log('child clicked')
     // e.stopPropagation()
-
 }
 
 function parentFun() {

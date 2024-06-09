@@ -1305,7 +1305,7 @@ String Templates
  - object: This parameter holds an object that will convert into an array.
 
 
-
+ 
 
 11) DOM
    =====
@@ -1454,12 +1454,14 @@ String Templates
    -----------------
   
    - Event bubbling means propagation of an event is done from child element to ancestor elements in the DOM. 
-   - When an event happens on an element, event first runs the handlers on it, then on its parent, then all the way up on other ancestors. Propagation path is bottom to top. 
+   - When an event happens on an element, event first runs the handlers on it, then on its parent, then all
+    the way up on other ancestors. Propagation path is bottom to top. 
                  
    2) Event capturing: 
    -------------------
 
-   - Event capturing means propagation of event is done from ancestor elements to child element in the DOM. Propagation path is top to bottom.
+   - Event capturing means propagation of event is done from ancestor elements to child element in the DOM.
+    Propagation path is top to bottom.
                    
    3) Event delegation: 
    --------------------
@@ -1738,12 +1740,10 @@ for (var v of person) {
    -Generator
    -arguments object
 
-
   By default not iterable data structures
   ---------------------------------------
 
    -object
-
 
 Generator:
 ---------
@@ -1767,20 +1767,21 @@ Note: When a generator function is called, it does not call the function instead
 Note: next method will start the excution till the yield operator. Next method returns an object which has two keys {value: any datatype, done: true/false}
 
 
-
-
 14) ES-6 Modules
 ================
 
-  - Consider a scenario where parts of JavaScript code need to be reused. ES6 comes to rescue with the concept of Modules.
+  - Consider a scenario where parts of JavaScript code need to be reused. ES6 comes to rescue with the concept
+   of Modules.
   - A module organizes a related set of JavaScript code. A module can contain variables and functions. 
   - A module is nothing more than a chunk of JavaScript code written in a file. 
   - By default, variables and functions of a module are not available for use. 
-  - Variables and functions within a module should be exported so that they can be accessed (imported) from within other files. 
+  - Variables and functions within a module should be exported so that they can be accessed (imported) from
+   within other files. 
 
    Named Exports
    -------------
-   Named exports are distinguished by their names. There can be several named exports in a module. A module can export selected components using the syntax given below −
+   Named exports are distinguished by their names. There can be several named exports in a module. A module
+   can export selected components using the syntax given below −
 
 Syntax 1
 --------
@@ -1933,23 +1934,32 @@ Note: We have to do extra 2 tasks 1) type: "module" 2) add .js to file extension
 ========================
 
 
-1) IIFE (Immediately Invocable Function Expression) (ES-5)
+1) IIFE (Immediately Invocable Function Expression) (ES-5)  //instead of that now ,we are using module pattern
 -------
 
-    =>An IIFE is a way to excute functions immediately as soon as they are created.
-    =>The most usecase of an IIFE is to restrict the scope of variables to local so that they don't pollute the global context.
+    =>An IIFE is a way to execute functions immediately as soon as they are created.
+    =>The most usecase of an IIFE is to restrict the scope of variables to local so that they don't pollute
+     the global context.
     =>It helps in making our variables and methods private.
     =>Any function or variable defined inside IIFE can not be accessed outside of
       the IIFE block, thus preventing global scope from getting polluted.
     =>It's often used to create private variables and functions.
- 
+
+    syntax:
+     (()=>{
+      var a=10  //->immediate ga call ayyinappude memory creation and execution context create avvudi
+    })()  //->function call intial ga cheyyali
+
+ Note:->window object lo variable store cheyadam safe kadu, iife lo store chesthe window object lo store avvadu 
+
 2) Function currying?
 --------------------
 
-  =>Function currying is a technique of trasforming (converting) a function with 
+  =>Function currying is a technique of transforming (converting) a function with 
     multiple parameters into multiple functions with single parameter.
   =>It helps to avoid passing same value again and again.
 
+  =>Closure is working internally in function currying
 
 3) first class function?
 ------------------------
@@ -1968,23 +1978,28 @@ Note: We have to do extra 2 tasks 1) type: "module" 2) add .js to file extension
 -----------------
 
    =>Pure functions always returns the same result if the same arguments are passed in. 
-   =>It does not depend on any state, or data, change during a program's execution. It must only depend on its input arguments . 
-   =>They do not have any side effects like network or database calls and do not modify the arguments which are passed to them.
+   =>It does not depend on any state, or data, change during a program's execution. It must only depend on its
+    input arguments . 
+   =>They do not have any side effects like network or database calls and do not modify the arguments which
+    are passed to them.
    =>We can predict the output from pure function.
 
    
 6) impure function?
 -------------------
 
-  =>Any function that changes the internal state of one of its arguments or the value of some external variable is an impure function. 
-  =>They may have any side effects like network or database calls and it may modify the arguments which are passed to them.
-  =>We can not predict output from impure fucntion.
+  =>Any function that changes the internal state of one of its arguments or the value of some external variable
+   is an impure function. 
+  =>They may have any side effects like network or database calls and it may modify the arguments which are
+   passed to them.
+  =>We can not predict output from impure function.
 
 
 7) Recursion function:
 ---------------------
 
- - A function that calls itself is recursion. Recursion in JavaScript is a recursive call of the function to itself, where the function calls itself, again and again, (recursively) until given condition becomes false.
+ - A function that calls itself is recursion. Recursion in JavaScript is a recursive call of the function to
+ itself, where the function calls itself, again and again, (recursively) until given condition becomes false.
 
   function recur(num) {
    if (num > 0) {
