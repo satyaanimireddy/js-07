@@ -216,7 +216,8 @@ we can develop logic or expression in combination with operators and variables.
 JavaScript Implicit Conversion
 ------------------------------
 
-In certain situations, JavaScript automatically converts one data type to another (to the right type). This is known as implicit conversion.
+In certain situations, JavaScript automatically converts one data type to another (to the right type). This
+ is known as implicit conversion.
 
 Example 1: Implicit Conversion to String
 -----------------------------------------
@@ -1498,7 +1499,8 @@ String Templates
 
 Synchronous JavaScript:
 ----------------------
-As the name suggests synchronous means to be in a sequence, i.e. every statement of the JS code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.
+As the name suggests synchronous means to be in a sequence, i.e. every statement of the JS code gets executed
+ one by one. So, basically a statement has to wait for the earlier statement to get executed.
 
 Let us understand this with the help of an example.
 
@@ -1508,12 +1510,16 @@ Let us understand this with the help of an example.
      
     document.write("How are you"); // Third
 
-In the above code snippet, the first line of the code Hi will be logged first then the second line Hari will be logged and then after its completion, the third line would be logged How are you.
-So as we can see the codes work in a sequence. Every line of code waits for its previous one to get executed first and then it gets executed.
+In the above code snippet, the first line of the code Hi will be logged first then the second line Hari will
+be logged and then after its completion, the third line would be logged How are you.
+So as we can see the codes work in a sequence. Every line of code waits for its previous one to get executed
+first and then it gets executed.
 
 Asynchronous JavaScript:
 ----------------------- 
-Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one. This may not look like a big problem but when you see it in a bigger picture you realize that it may lead to delaying the User Interface.
+Asynchronous code allows the program to be executed immediately where the synchronous code will block further
+execution of the remaining code until it finishes the current one. This may not look like a big problem but
+when you see it in a bigger picture you realize that it may lead to delaying the User Interface.
 
     console.log("Hi");
     
@@ -1524,8 +1530,13 @@ Asynchronous code allows the program to be executed immediately where the synchr
     console.log("End");
 
 
- - So, what the code does is first it logs in Hi then rather than executing the setTimeout function it logs in End and then it runs the setTimeout function. At first, as usual, the Hi statement got logged in. As we use browsers to run JavaScript, there are the web APIs that handle these things for users. 
- - So, what JavaScript does is, it passes the setTimeout function in such web API and then we keep on running our code as usual. So it does not block the rest of the code from executing and after all the code its execution, it gets pushed to the call stack and then finally gets executed. This is what happens in asynchronous JavaScript.
+ - So, what the code does is first it logs in Hi then rather than executing the setTimeout function it logs in
+  End and then it runs the setTimeout function. At first, as usual, the Hi statement got logged in. As we use
+  browsers to run JavaScript, there are the web APIs that handle these things for users. 
+ - So, what JavaScript does is, it passes the setTimeout function in such web API and then we keep on running
+  our code as usual. So it does not block the rest of the code from executing and after all the code its
+  execution, it gets pushed to the call stack and then finally gets executed. This is what happens in
+  asynchronous JavaScript.
 
 
 // console.log('Hello');
@@ -1550,27 +1561,32 @@ Asynchronous code allows the program to be executed immediately where the synchr
    ---------------------
 
     - A JavaScript callback is a function which is to be executed after another function has finished execution. 
-    - A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.     
-    - When we have to process the data further then callback syntax will create callback hell situation. we can not read the callback code.
+    - A more formal definition would be - Any function that is passed as an argument to another function so
+     that it can be executed in that other function is called as a callback function.     
+    - When we have to process the data further then callback syntax will create callback hell situation. we
+     can not read the callback code.
     
       Why use callback function in JavaScript?
 
       Asynchronous programming: 
 
-    - Callbacks are used to handle the results of asynchronous operations, which means that the operation does not block the execution of the rest of the program. 
-    - Instead, the program continues to run and the callback function is executed when the operation is complete.
+    - Callbacks are used to handle the results of asynchronous operations, which means that the operation does
+     not block the execution of the rest of the program. 
+    - Instead, the program continues to run and the callback function is executed when the operation is
+     complete.
 
    2) Promises
       --------
 
-   - Promises are a way to implement asynchronous programming in JavaScript(ES6 which is also known as ECMAScript-6). A Promise acts as a container for future values.
+   - Promises are a way to implement asynchronous programming in JavaScript(ES6 which is also known as
+    ECMAScript-6). A Promise acts as a container for future values.
 
-   - A promise is a JavaScript object that allows you to make asynchronous calls. It produces a value when the async operation completes successfully or produces an error if it doesn't complete.
+   - A promise is a JavaScript object that allows you to make asynchronous calls. It produces a value when
+    the async operation completes successfully or produces an error if it doesn't complete.
  
    - let promise = new Promise(function(resolve, reject) { Do something and either resolve or reject})
 
    - Promise has 3 states 1) pending 2) success 3) failure.
-
 
     a) Promise.all()
        -------------
@@ -1580,14 +1596,17 @@ Asynchronous code allows the program to be executed immediately where the synchr
     b) Promise.allSettled()
        -------------------
 
-      - whereas Promise.allSettled() waits for all the promises to settle (either resolve or reject) before returning an array of objects representing each promise's outcome.
+      - whereas Promise.allSettled() waits for all the promises to settle (either resolve or reject) before
+       returning an array of objects representing each promise's outcome.
 
-      - Promise.allSettled will never reject - it will resolve once all Promises in the array have either rejected or resolved.
+      - Promise.allSettled will never reject - it will resolve once all Promises in the array have either
+       rejected or resolved.
 
     c) Promise.race() 
        --------------
 
-      - The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
+      - The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises
+       in an iterable fulfills or rejects, with the value or reason from that promise.
       - It returns the winning promise only.
 
 example:
@@ -2034,11 +2053,14 @@ console.log(result);
 19) Errors handling in JavaScript:
 =================================
  
- - Handling errors in JavaScript is essential to ensure your code is robust and provides a good user experience. JavaScript provides several mechanisms to handle errors effectively. Here are some common methods:
+ - Handling errors in JavaScript is essential to ensure your code is clean and provides a good user experience.
+  JavaScript provides several mechanisms to handle errors effectively. Here are some common methods:
 
    Using try...catch:
 
- - The try...catch block allows you to handle exceptions (errors) that occur within a specific block of code. You can place the code that might throw an error inside the try block, and if an error occurs, it will be caught and processed in the catch block.
+ - The try...catch block allows you to handle exceptions (errors) that occur within a specific block of code.
+  You can place the code that might throw an error inside the try block, and if an error occurs, it will be
+  caught and processed in the catch block.
 
   try => try statement lets you test a block of code for error.
   catch => catch statement lets you handle the error.
@@ -2055,7 +2077,10 @@ console.log(result);
 20) Optional chaining:
     -----------------
 
-Optional chaining is a feature introduced in JavaScript as part of ECMAScript 2020 (ES11) and is denoted by the ?. syntax. It provides a way to access properties or call methods on an object without having to explicitly check if each intermediate property or object exists. This can help prevent errors and make your code more concise and readable when dealing with potentially undefined or null values.
+Optional chaining is a feature introduced in JavaScript as part of ECMAScript 2020 (ES11) and is denoted by
+the ?. syntax. It provides a way to access properties or call methods on an object without having to
+explicitly check if each intermediate property or object exists. This can help prevent errors and make your
+code more concise and readable when dealing with potentially undefined or null values.
 
 Suppose you have an object person:
 
@@ -2089,12 +2114,13 @@ If person.greet doesn't exist, nothing happens, and no error is thrown
 person.greet?.(); // No error, nothing happens
 In the second example, person.greet?.() will not throw an error even if greet is not defined.
 
-Optional chaining is a powerful feature that simplifies code, especially when working with complex data structures, APIs, or third-party libraries where the structure of the data may not always be guaranteed. 
+Optional chaining is a powerful feature that simplifies code, especially when working with complex data 
+structures, APIs, or third-party libraries where the structure of the data may not always be guaranteed. 
 
 
 
-21) Web storage
-    ===========
+21) Web storage (HTML-5)
+    ====================
 
     1) local storage
 
@@ -2110,7 +2136,7 @@ Optional chaining is a powerful feature that simplifies code, especially when wo
 
   => Read Data from Local Storage
 
-     let lastname = localStorage.getItem(key);
+     localStorage.getItem(key);
 
   => Remove Data from Local Storage
 
@@ -2126,3 +2152,292 @@ Optional chaining is a powerful feature that simplifies code, especially when wo
      - The sessionStorage Object which stores data for one session.
 
      - The data is deleted when the browser window is closed.
+
+     -The storage capacity of session storage is 5MB
+
+
+
+
+23) Data structures
+===============
+
+In JavaScript, keys of objects are always strings or symbols. Even if you use a number as a key, it gets converted to a string. Here's an example to illustrate this:
+
+let obj = {
+  name: "Alice",
+  age: 25,
+  1: "one",
+  true: "boolean",
+  null: "null",
+  undefined: "undefined",
+  symbolKey: Symbol("symbolValue")
+};
+
+for (let key in obj) {
+  console.log(`${key}: ${typeof key}`);
+}
+
+
+In this example, even though some keys appear to be numbers, booleans, null, or undefined, they are all converted to strings. The output will be:
+
+1: string
+name: string
+age: string
+true: string
+null: string
+undefined: string
+symbolKey: string
+
+Symbols are a special case. If a symbol is used as a key, it does not show up in a regular for...in loop or Object.keys() method. To handle symbols, you can use Object.getOwnPropertySymbols.
+
+Here's how you can identify both string and symbol keys in an object:
+
+let obj = {
+  name: "Alice",
+  age: 25,
+  [Symbol("symbolKey")]: "symbolValue"
+};
+
+// Check string keys
+
+for (let key in obj) {
+  console.log(`${key}: ${typeof key}`);
+}
+
+// Check symbol keys
+
+let symbolKeys = Object.getOwnPropertySymbols(obj);
+for (let sym of symbolKeys) {
+  console.log(`${sym.toString()}: ${typeof sym}`);
+}
+
+
+In JavaScript, keys of objects are always strings or symbols. Even if you use a number as a key, it gets converted to a string. Here's an example to illustrate this:
+
+javascript
+Copy code
+let obj = {
+  name: "Alice",
+  age: 25,
+  1: "one",
+  true: "boolean",
+  null: "null",
+  undefined: "undefined",
+  symbolKey: Symbol("symbolValue")
+};
+
+for (let key in obj) {
+  console.log(`${key}: ${typeof key}`);
+}
+In this example, even though some keys appear to be numbers, booleans, null, or undefined, they are all converted to strings. The output will be:
+
+
+1: string
+name: string
+age: string
+true: string
+null: string
+undefined: string
+symbolKey: string
+Symbols are a special case. If a symbol is used as a key, it does not show up in a regular for...in loop or Object.keys() method. To handle symbols, you can use Object.getOwnPropertySymbols.
+
+Here's how you can identify both string and symbol keys in an object:
+
+let obj = {
+  name: "Alice",
+  age: 25,
+  [Symbol("symbolKey")]: "symbolValue"
+};
+
+// Check string keys
+
+for (let key in obj) {
+  console.log(`${key}: ${typeof key}`);
+}
+
+// Check symbol keys
+
+let symbolKeys = Object.getOwnPropertySymbols(obj);
+for (let sym of symbolKeys) {
+  console.log(`${sym.toString()}: ${typeof sym}`);
+}
+
+This will output:
+
+name: string
+age: string
+Symbol(symbolKey): symbol
+
+In summary, JavaScript object keys are either strings or symbols. Regular object keys (including those that look like numbers or booleans) are converted to strings, and symbol keys need to be handled separately using Object.getOwnPropertySymbols().
+
+
+
+When to use map:
+
+With map, you can use any type (and values) as keys.
+Map provides better performance for large quantities of data.
+Use a map for better performance when adding and removing data frequently.
+
+When to use an object:
+
+Objects can only use strings, and symbols as keys.
+Objects are perfect for small to medium-sized sets of data.
+Objects have better performance and are easier to create.
+
+
+map
+---
+
+Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+
+how to create empty
+-------------------
+
+var obj = {}
+
+var map = new Map(); 
+
+how to initialize with values 
+-----------------------------
+
+var obj = {name: 'sachin', age: 40}
+
+const map = new Map([ [ 'one', 1 ], [ 'two', 2 ] ]);
+
+how to add new properties
+-------------------------
+
+obj[color] = 'red'
+obj.color = 'red' 
+
+map.set(key, value) -- stores the value by the key.
+
+how to get or access values
+---------------------------
+
+obj.key
+obj['key']
+
+map.get(key) -- returns the value by the key, undefined if key doesn't exist in map.
+
+how to check specific key is there
+----------------------------------
+
+The in operator checks if a key exists in the object, including keys from the prototype chain.
+
+The hasOwnProperty method checks if a key exists directly on the object, not considering keys from the prototype chain.
+
+console.log('name' in obj)
+console.log(obj.hasOwnProperty('name'))
+
+map.has(key) -- returns true if the key exists, false otherwise.
+
+how to delete specific key 
+--------------------------
+
+delete obj.name;
+
+map.delete(key) -- removes the value by the key.
+
+how to delete all keys
+----------------------
+
+
+Using a loop with the delete operator
+
+for (let key in obj1) {
+  if (obj1.hasOwnProperty(key)) {
+    delete obj1[key];
+  }
+}
+
+Setting the object to an empty object
+
+obj = {};
+console.log(obj); // {}
+
+
+map.clear() -- clears the map
+
+how to find length
+------------------
+
+alt:1
+
+let length = Object.keys(obj).length;
+
+alt:2
+
+let length = 0;
+for (let key in obj) {
+  if (obj.hasOwnProperty(key)) {
+    length++;
+  }
+}
+
+alt:3
+
+let length = Object.getOwnPropertyNames(obj).length;
+
+map.size -- returns the current element count.
+
+how to loop keys
+----------------
+alt:1
+
+for (let key in obj) {
+  if (obj.hasOwnProperty(key)) {
+    console.log(`${key}: ${obj[key]}`);
+  }
+}
+
+alt:2
+
+let keys = Object.keys(obj);
+
+for (let i = 0; i < keys.length; i++) {
+  let key = keys[i];
+  console.log(`${key}: ${obj[key]}`);
+}
+
+alt:3
+
+
+Object.keys(obj).forEach(key => {
+  console.log(`${key}: ${obj[key]}`);
+});
+
+Similar to objects, there are three methods you can use for looping over Maps:
+
+map.keys() returns an iterable containing the keys
+map.values() returns an iterable containing the values
+map.entries() returns an iterable containing the [key, value] pairs
+
+how to convert
+--------------
+
+let map = new Map(Object.entries(obj));
+
+let obj = Object.fromEntries(map);
+
+how to destructure 
+------------------
+
+
+let { one, two } = obj;
+
+let { one, two } = map;
+
+console.log(one) // undefined
+
+// But you can destructure it similar to an array where you destructure by the order items were added into the map
+
+let [ firstEntry, secondEntry ] = map;
+
+console.log(firstEntry) // ["one", 1]
+console.log(secondEntry) // ["two", 2]
+
+-remember the regular Object? it would convert keys to string.
+-Map keeps the type, so these two are different.
+-As we can see, unlike objects, keys are not converted to strings. Any type of key is possible.
+-Map can also use objects as keys.

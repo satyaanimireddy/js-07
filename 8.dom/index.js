@@ -218,76 +218,75 @@
 
 // // //    * from git ** How to create and add elements to dom ***
 
-var para = document.createElement('p')
+// var para = document.createElement('p')
 
-console.log(para)
+// console.log(para)
 
-para.id = 'myid'
+// para.id = 'myid'
 
-para.className = 'myclass'
+// para.className = 'myclass'
 
-// para.innerHTML = 'this is para'
+// // para.innerHTML = 'this is para'
 
-var paraText = document.createTextNode('this is para')
-console.log(paraText)
+// var paraText = document.createTextNode('this is para')
+// console.log(paraText)
 
-para.appendChild(paraText)
+// para.appendChild(paraText)
 
-var body = document.getElementById('body')
-console.log(body)
+// var body = document.getElementById('body')
+// console.log(body)
 
-var addAfterBtn = document.getElementById('addafter')
-console.log(addAfterBtn)
+// var addAfterBtn = document.getElementById('addafter')
+// console.log(addAfterBtn)
 
-console.log(para);
-function addAfter() {
-    body.appendChild(para)
-}
+// console.log(para);
+// function addAfter() {
+//     body.appendChild(para)
+// }
 
-addAfterBtn.addEventListener('click', addAfter)
-
-
-var h1 = document.createElement('h1')
-
-h1.id = 'myh1id'
-h1.className = 'myh1class'
-
-h1.innerHTML = 'This is heading one'
+// addAfterBtn.addEventListener('click', addAfter)
 
 
-var addBeforeBtn = document.getElementById('addbefore')
-// console.log(body);
-function addBeforeFun() {
-    body.insertBefore(h1, body[0])
-}
-addBeforeBtn.addEventListener('click', addBeforeFun)
+// var h1 = document.createElement('h1')
 
-//  // ***How to replace child in dom
+// h1.id = 'myh1id'
+// h1.className = 'myh1class'
 
-var div = document.createElement('div')
-
-div.id = 'mydiv'
-
-div.innerHTML = 'this is div'
+// h1.innerHTML = 'This is heading one'
 
 
-var updateBtn = document.getElementById('update')
+// var addBeforeBtn = document.getElementById('addbefore')
+// // console.log(body);
+// function addBeforeFun() {
+//     body.insertBefore(h1, null)
+// }
+// addBeforeBtn.addEventListener('click', addBeforeFun)
 
-function update() {
+// //  // ***How to replace child in dom
 
-    body.replaceChild(div, h1)
-}
-updateBtn.addEventListener('click', update)
+// var div = document.createElement('div')
 
-var deleteBtn = document.getElementById('delete')
+// div.id = 'mydiv'
 
-function deleteFun() {
-    // para.remove()
+// div.innerHTML = 'this is div'
 
-    body.removeChild(para)
-}
 
-deleteBtn.addEventListener('click', deleteFun)
+// var updateBtn = document.getElementById('update')
+
+// function update() {
+//     body.replaceChild(div, h1)
+// }
+// updateBtn.addEventListener('click', update)
+
+
+// var deleteBtn = document.getElementById('delete')
+
+// function deleteFun() {
+//     // para.remove()
+//     body.removeChild(para)
+// }
+
+// deleteBtn.addEventListener('click', deleteFun)
 
 
 // my practice***
@@ -376,3 +375,15 @@ deleteBtn.addEventListener('click', deleteFun)
 // // ul.insertBefore(li2, null)  //
 
 // console.log(ul);
+
+
+var parent = document.getElementById('nnn')
+console.log(parent);
+
+var child = document.getElementById("currentdiv")
+var p = document.createElement('p')
+p.innerHTML = "hii hello"
+parent.insertBefore(p, child)
+
+child.remove()
+// parent.removeChild(p)
