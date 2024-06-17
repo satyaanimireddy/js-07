@@ -215,6 +215,10 @@ myMap.set('age', 40)
 // console.log(myMap.values());
 // console.log(myMap.entries());
 
+// for (var value of myMap) {
+//     console.log(value);
+// }
+
 // *** how to convert object into Map data structure:
 
 
