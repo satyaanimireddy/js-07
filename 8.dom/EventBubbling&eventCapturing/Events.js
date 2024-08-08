@@ -26,7 +26,7 @@ var parent = document.getElementById('parent')
 function subChildFun(e) {
     console.log('sub child clicked')
     //event properties
-    e.stopPropagation()
+    // e.stopPropagation()
     console.log(e)
     console.log(e.clientX)
     console.log(e.clientY)

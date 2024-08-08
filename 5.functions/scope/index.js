@@ -11,6 +11,9 @@ console.log(c)
 // console.log(d)
 // console.log(e)
 // console.log(f)
+// console.log(g)
+// console.log(h)
+// console.log(i)
 
 function test() {
     // storing in functional

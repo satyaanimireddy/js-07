@@ -1,11 +1,11 @@
+// object literal way:
+
+
 // var obj1 = {
 //     name: 'sachin',
 //     age: 40,
 //     play: () => {
 //         console.log('play')
-
-
-
 //     }
 // }
 
@@ -23,7 +23,7 @@
 // console.log(obj2)
 
 
-// factory function way
+// factory function way:-
 
 // function test(name, age) {
 //     return {
@@ -36,6 +36,7 @@
 // }
 // var obj1 = test('sachin', 40)
 // var obj2 = test('kohli', 30)
+
 // console.log(obj1)
 // console.log(obj2)
 
@@ -52,6 +53,7 @@
 // }
 // var obj1 = new test('sachin', 40)
 // var obj2 = new test('kohli', 30)
+
 // console.log(obj1)
 // console.log(obj2)
 
@@ -65,8 +67,6 @@
 //             console.log('play')
 //         }
 //     }
-
-
 // }
 // // console.log(typeof test)
 // var obj1 = new test('sachin', 40)
@@ -119,42 +119,45 @@
 // how to delete method in obj
 
 // delete obj.play
+// delete obj.age
 // console.log(obj)
 
 
 // ***setters and getters ****
 
+
 // var person = {
 //     fname: 'virat',
 //     lname: 'kohli',
 
-//     // fullname: () => {
-//     //     console.log(`${person.fname} ${person.lname}`)
-//     // }
+//     fullname: () => {
+//         console.log(`${person.fname} ${person.lname}`)
+//     },
 
 //     get fullname() {
 //         // we use get  to access method as normal property
 //         console.log(`${person.fname} ${person.lname}`)
 //     },
+
 //     set fullname(value) {
 //         // we use set to update method
 //         console.log(value)
 //         var parts = value.split(' ')  //split string ni tesukoni array lo peduthundi
-//         // console.log(parts)
+//         console.log(parts)
 //         person.fname = parts[0]
 //         person.lname = parts[1]
 //     }
 // }
 // console.log(person)
-// // console.log(person.fname + " " + person.lname)
-// // console.log(`${person.fname} ${person.lname}`)
+// //console.log(person.fname + " " + person.lname)
+// console.log(`${person.fname} ${person.lname}`)
 
-// // person.fullname()
+// person.fullname()
 
 
 // person.fullname // to access method as a normal property by using getter function
 
-// person.fullname = 'venkat ravali' // to update this we have to setter otherwise it will not update
+// person.fullname = 'sachin tendulkar' // to update this we have to setter otherwise it will not update
 
 // console.log(person)
 // person.fullname
@@ -181,13 +184,13 @@
 // }
 
 // var keys = Object.keys(person)
-// console.log(keys)
+// console.log(keys)  // ["name","age","play"]
 
 // var values = Object.values(person)
-// console.log(values)
+// console.log(values)  // ['sachin','40',f]
 
 // var entries = Object.entries(person)
-// console.log(entries)
+// console.log(entries)  //[["name":"sachin", ["age":40],["play",f]]
 
 //*****math object***
 
@@ -196,19 +199,27 @@
 
 // console.log(Math.min(x, y, 40, 60))
 // console.log(Math.max(x, y, 40, 60))
-// console.log(Math.floor(20.9))
-// console.log(Math.floor(20.1))
-// console.log(Math.ceil(20.1))
-// console.log(Math.ceil(20.8))
-// console.log(Math.round(20.8))
-// console.log(Math.round(20.5))
-// console.log(Math.round(20.4))
-// console.log(Math.floor(Math.random()))
-// console.log(Math.ceil(Math.random()))
+
+// console.log(Math.floor(20.9))  //20
+// console.log(Math.floor(20.1))  //20
+
+// console.log(Math.ceil(20.1))  //21
+// console.log(Math.ceil(20.8))  //21
+// console.log(Math.round(20.8))  //21
+// console.log(Math.round(20.5))  //21
+// console.log(Math.round(20.4))  //20
+// console.log(Math.random()) // float number
+// console.log(Math.random() * 100) // float number
+
+// console.log(Math.floor(Math.random() * 100)) //integers
+
+// console.log(Math.ceil(Math.random()))  //1
+
 // console.log(Math.floor(Math.random() * 10))
 // console.log(Math.floor(Math.random() * 100))
 // console.log(Math.floor(Math.random() * 1000))
 // console.log(Math.floor(Math.random() * 10000))
+
 // console.log(Math.pow(10, 2))
 // console.log(Math.sqrt(25))
 // console.log(Math.sqrt(9))
@@ -217,14 +228,14 @@
 
 // ***interview question**
 
-// // console.log(x)  //x is not defined (it is not in the memory)
+// console.log(x)  //x is not defined (it is not in the memory)
 // x = 100  // here we did't use var,let,const keywords
 // console.log(x)
 
 // ***date object ***
 
-var now = new Date()
-console.log(now)
+// var now = new Date()
+// console.log(now)
 
 // // get methods:
 // console.log(now.getDate())
@@ -236,11 +247,11 @@ console.log(now)
 
 // // set methods:
 
-now.setFullYear(2050)
-now.setDate(20)
-now.setMonth(4)
+// now.setFullYear(2050)
+// now.setDate(20)
+// now.setMonth(4)
 
-console.log(now)
+// console.log(now)
 // console.log(now.getDate())
 // console.log(now.getFullYear())
 // console.log(now.getMonth())
@@ -292,6 +303,7 @@ console.log(now)
 // var age = 40
 // //without string literals(concat)
 // console.log('Hi' + " " + name + " " + 'How are you ?' + " " + 'age is ' + age)
-// //with string literals
+
+// // //with string literals
 
 // console.log(`Hi ${name} how are you ? age is ${age}`)

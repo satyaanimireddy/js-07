@@ -1,9 +1,8 @@
-// var arr = [1, 2, 3, 4, 5]
+var arr = [1, 2, 3, 4, 5]
 //how to access
 
 
-
-// console.log(arr)
+console.log(arr)
 // console.log(arr[0])
 // console.log(arr[1])
 // console.log(arr[2])
@@ -133,11 +132,11 @@
 
 // 7.how to copy/clone array:
 
-// var originalArr = ['sachin', { road: 101 }, () => { }]
+var originalArr = ['sachin', { road: 101 }, () => { }]
 
 
 // var coppiedArr = originalArr  //normal copy
-// var coppiedArr = JSON.parse(JSON.stringify(originalArr))  //deep copy
+var coppiedArr = JSON.parse(JSON.stringify(originalArr))  //deep copy
 
 // var coppiedArr = Object.assign([], originalArr)  //shallow copy
 
@@ -145,12 +144,12 @@
 // var coppiedArr = [...originalArr]  //shallow copy(es-6)
 
 
-// coppiedArr[0] = 'kohli'
-// coppiedArr[1].road = 65
+coppiedArr[0] = 'kohli'
+coppiedArr[1].road = 65
 // coppiedArr[1] = 201
 
-// console.log(originalArr)
-// console.log(coppiedArr)
+console.log(originalArr)
+console.log(coppiedArr)
 
 // ****example
 // const originalArray = [1, 2, 3, 4, 5];
@@ -407,10 +406,10 @@
 // var result = Array.from(str)  //it will convert into array
 
 // var result = Array.from(obj) //it will convert into array
-var result = Array.from(obj, (v, i) => {
-    return i  //it will give index numbers,v isthe undefined
-})  //it will
-console.log(result)
+// var result = Array.from(obj, (v, i) => {
+//     return i  //it will give index numbers,v isthe undefined
+// })  //it will
+// console.log(result)
 
 // function test() {
 //     console.log(arguments)
@@ -535,3 +534,17 @@ console.log(result)
 
 // }
 // console.log(findLongestWord(str))
+
+
+// 8.how to print duplicates in array:
+
+// var arr = [1, 2, 1, 3, 2, 4, 3, 1]
+
+// var duplicates = arr.filter((ele, i, arr) => {
+//     // console.log(ele);
+//     // console.log(i);
+//     // console.log(arr);
+//     return (arr.indexOf(ele) !== i)
+
+// })
+// console.log(duplicates);

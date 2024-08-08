@@ -17,7 +17,7 @@
 // **id
 
 // var element = document.getElementById('myid-1')
-// // var para2 = document.getElementById('myid-2')
+// var para2 = document.getElementById('myid-2')
 
 // element.style.background = 'red'
 // element.style.color = 'white'
@@ -64,11 +64,17 @@
 
 // console.log(element.style.background = 'blue')
 
+// console.log(element)
+
 //**query selectorAll *
 
 // var element = document.querySelectorAll('#myid-1')
 // var element = document.querySelectorAll('.para')
 // var element = document.querySelectorAll('p')
+
+// console.log(element[0].style.background = 'blue')
+// console.log(element[1].style.background = 'red')
+
 // console.log(element)
 // console.log(Array.isArray(element))
 
@@ -77,6 +83,7 @@
 
 // var currentElement = document.getElementById('currentdiv')
 // console.log(currentElement)
+// currentElement.style.color = "red"
 
 // //* element to parent
 
@@ -123,22 +130,25 @@
 
 // ********
 
-// var body = document.getElementById('body')
+var body = document.getElementById('body')
 
-// var h1 = document.createElement('h1')
-// h1.id = 'myh1'
-// h1.className = 'myh1Class'
-// h1.innerHTML = 'this is heading h1'
-// body.appendChild(h1)
+var h1 = document.createElement('h1')
+h1.id = 'myh1'
+h1.className = 'myh1Class'
+h1.innerHTML = 'this is heading h1'
+body.appendChild(h1)
 
-// var h3 = document.createElement('h3')
-// h3.id = 'myh3'
-// h3.innerHTML = 'this is heading h3'
+console.log(h1);
 
-// var div = document.createElement('div')
+var h3 = document.createElement('h3')
+h3.id = 'myh3'
+h3.innerHTML = 'this is heading h3'
+console.log(h3);
 
-// div.id = 'mydiv'
-// div.innerHTML = 'this is div'
+var div = document.createElement('div')
+
+div.id = 'mydiv'
+div.innerHTML = 'this is div'
 
 
 // var beforebtn = document.getElementById("addbefore")
@@ -149,7 +159,6 @@
 //     body.insertBefore(div, h1)
 // }
 
-
 // var afterbtn = document.getElementById("addafter")
 
 // afterbtn.addEventListener('click', afterMethod)
@@ -158,7 +167,6 @@
 //     body.appendChild(h3)
 // }
 
-
 // var updatebtn = document.getElementById("update")
 
 // updatebtn.addEventListener('click', updateMethod)
@@ -166,7 +174,6 @@
 // function updateMethod() {
 //     body.replaceChild(h3, h1)
 // }
-
 
 // var deletebtn = document.getElementById("delete")
 
@@ -377,13 +384,13 @@
 // console.log(ul);
 
 
-var parent = document.getElementById('nnn')
-console.log(parent);
+// var parent = document.getElementById('nnn')
+// console.log(parent);
 
-var child = document.getElementById("currentdiv")
-var p = document.createElement('p')
-p.innerHTML = "hii hello"
-parent.insertBefore(p, child)
+// var child = document.getElementById("currentdiv")
+// var p = document.createElement('p')
+// p.innerHTML = "hii hello"
+// parent.insertBefore(p, child)
 
-child.remove()
+// child.remove()
 // parent.removeChild(p)

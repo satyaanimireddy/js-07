@@ -1,12 +1,9 @@
 
 // var msg = ' hi how are you '
-// var msg = 'hi how are you'
+var msg = 'hi how are you'
 
 
-
-
-
-// console.log(msg)
+console.log(msg)
 //length
 
 // console.log(msg.length)
@@ -21,8 +18,9 @@
 //slice
 // console.log(msg.slice())
 // console.log(msg.slice(0))
+// console.log(msg.slice(3))
 // console.log(msg.slice(3, 7))
-// console.log(msg.slice(-1))
+// console.log(msg.slice(-5))
 
 // substring
 
@@ -40,7 +38,7 @@
 // console.log(msg.substr(0))
 // console.log(msg.substr(2))
 // console.log(msg.substr(0, 6))
-// console.log(msg.substr(-3))
+// console.log(msg.substr(3))
 
 //charAt
 var msg = 'Hi how are you'
@@ -48,7 +46,7 @@ var msg = 'Hi how are you'
 
 // console.log(msg.charAt())
 // console.log(msg.charAt(0))
-// console.log(msg.charAt(3))
+console.log(msg.charAt(4))
 
 //charCodeAt(it will gives the ascii code)
 
@@ -59,8 +57,8 @@ var msg = 'Hi how are you'
 
 var msg = 'Hi how are you bye you'
 
-// console.log(msg.replace('you', 'sachin'))
-// console.log(msg)  // it gives the original sting not modified string because of it is a primitive datatype
+console.log(msg.replace('you', 'sachin'))
+console.log(msg)  // it gives the original sting not modified string because of it is a primitive datatype
 
 //toLowercase
 
@@ -72,7 +70,7 @@ var msg = 'Hi how are you bye you'
 
 //concat:
 
-// console.log(msg.concat(' hello'))
+console.log(msg.concat(' hello', "hiiiiii"))
 
 // **padStart
 
@@ -82,7 +80,7 @@ var msg = 'Hi how are you bye you'
 // console.log(message.padEnd(6, 4))
 // console.log(message.padEnd(6, 10))
 
-// **split 
+// **split
 // var arr = msg.split()
 // // var arr = msg.split('')
 // // var arr = msg.split(' ')
@@ -107,10 +105,10 @@ var msg = 'Hi how are you bye you'
 
 // **startsWith
 
-console.log(msg.startsWith('Hi'))
-console.log(msg.startsWith('you'))
+// console.log(msg.startsWith('Hi'))
+// console.log(msg.startsWith('you'))
 
 // **endswith
 
-console.log(msg.endsWith('you'))
-console.log(msg.endsWith('kohli'))
+// console.log(msg.endsWith('you'))
+// console.log(msg.endsWith('kohli'))

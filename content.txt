@@ -18,7 +18,7 @@
    
    Node js is a run time environment for JS.
    By using nodejs we can create APIs.
-   Node js is not a programing lanaguage.
+   Node js is not a programming language.
    Node js is not a library.
    Node js is not a framework.  
    
@@ -39,7 +39,7 @@
 
      How to run js file in nodejs
 
-     => node filenane
+     => node filename
 
 
 
@@ -646,7 +646,8 @@ Note:
 
  - Parameters are the placeholders or variables defined in the function's declaration.
  - They are like local variables that store the values passed to the function when it is called.
- - They are defined within the function's parentheses in the function declaration and serve as        placeholders for the arguments that will be provided when the function is called.
+ - They are defined within the function's parentheses in the function declaration and serve as placeholders
+  for the arguments that will be provided when the function is called.
 
  Arguments
  ---------
@@ -658,8 +659,8 @@ Note:
 
 4) what is default parameter
    
- - Default parameters were introduced in ECMAScript 6 (ES6) and have since become a common feature    in modern JavaScript.
- - To define default parameters in a function, you assign a default value to a parameter in the       function's declaration.
+ - Default parameters were introduced in ECMAScript 6 (ES6) and have since become a common feature in modern JavaScript.
+ - To define default parameters in a function, you assign a default value to a parameter in the function's declaration.
  - Default parameters in JavaScript allow you to specify default values for function parameters.
 
 5) Varying no of parameters or arguments
@@ -1202,7 +1203,7 @@ String Templates
 
    join()
 
-      =>The join() method returns an array as a string.
+      =>The join() method converts an array into a string.
 
       =>The join() method does not change the original array.
 
@@ -1491,7 +1492,7 @@ String Templates
    2) Throttling event: Throttling is about firing event after every certain time.
 
    3) Debouncing event: Debouncing will execute after every certain time provided 
-                        in between there was no event firing.
+      in between there was no event firing.
 
 
 12) Asynchronous JS
@@ -1653,7 +1654,9 @@ example:
 API CALLS
 =========
 
-The fetch() method in JavaScript is used to request data from a server. The request can be of any type of API that returns the data in JSON . The fetch() method requires one parameter, the URL to request, and returns a promise.
+The fetch() method in JavaScript is used to request data from a server. The request can be of any type of API
+that returns the data in JSON . The fetch() method requires one parameter, the URL to request, and returns a
+promise.
 
 api for the get request:
 
@@ -1666,7 +1669,8 @@ URL: It is the URL to which the request is to be made.
 
 Return Value: 
 
-It returns a promise whether it is resolved or not. The return data can be of the JSON format. It can be an array of objects or simply a single object.
+It returns a promise whether it is resolved or not. The return data can be of the JSON format. It can be an
+ array of objects or simply a single object.
 
 NOTE: Without options, Fetch will always act as a get request.
 
@@ -1697,12 +1701,14 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 13) iterators and generators
  ===========================
 
-  - Iterator is a new concept introduced in ES-6. It's a kind of new mechanism to iterate or traverse through data structures. 
+  - Iterator is a new concept introduced in ES-6. It's a kind of new mechanism to iterate or traverse through
+   data structures. 
   - Arrays, strings, Maps, Sets all these data collections are iterable.
 
   Iterable:(object)
   -------- 
-   An iterable is any object that impliments a method whose key is symbol.iterator and symbol.iterator method is going return an iterator object.
+   An iterable is any object that impliments a method whose key is symbol.iterator and symbol.iterator method
+    is going return an iterator object.
 
   Iterator:(object) It returns by symbol.iterator()
   --------
@@ -1783,7 +1789,8 @@ Generator:
 
 Note: When a generator function is called, it does not call the function instead it returns
       a generator object.
-Note: next method will start the excution till the yield operator. Next method returns an object which has two keys {value: any datatype, done: true/false}
+Note: next method will start the excution till the yield operator. Next method returns an object which has
+ two keys {value: any datatype, done: true/false}
 
 
 14) ES-6 Modules
@@ -1967,9 +1974,9 @@ Note: We have to do extra 2 tasks 1) type: "module" 2) add .js to file extension
     syntax:
      (()=>{
       var a=10  //->immediate ga call ayyinappude memory creation and execution context create avvudi
-    })()  //->function call intial ga cheyyali
+    })()  //->function call initial ga cheyyali
 
- Note:->window object lo variable store cheyadam safe kadu, iife lo store chesthe window object lo store avvadu 
+ Note:->window object lo variable store cheyadam safe kadu, IIFE lo store chesthe window object lo store avvadu 
 
 2) Function currying?
 --------------------
@@ -1978,19 +1985,22 @@ Note: We have to do extra 2 tasks 1) type: "module" 2) add .js to file extension
     multiple parameters into multiple functions with single parameter.
   =>It helps to avoid passing same value again and again.
 
-  =>Closure is working internally in function currying
+  =>Closure is working internally in function currying 
 
 3) first class function?
 ------------------------
 
-  =>A programming language is said to have First-class functions when functions in that language are treated like any other variable. 
-  =>For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.
+  =>A programming language is said to have First-class functions when functions in that language are treated
+   like any other variable. 
+  =>For example, in such a language, a function can be passed as an argument to other functions, can be
+   returned by another function and can be assigned as a value to a variable.
 
 
-4) heigher order function?
+4) higher order function?
 --------------------------
   
-  =>A function that receives another function as an argument or that returns a new function or both is called Higher-order function. Higher-order functions are only possible because of the First-class function.
+  =>A function that receives another function as an argument or that returns a new function or both is called
+   Higher-order function. Higher-order functions are only possible because of the First-class function.
 
 
 5) pure function? 
@@ -2441,3 +2451,10 @@ console.log(secondEntry) // ["two", 2]
 -Map keeps the type, so these two are different.
 -As we can see, unlike objects, keys are not converted to strings. Any type of key is possible.
 -Map can also use objects as keys.
+
+
+*** inheritance *** 
+
+->inheritance is a core concept in OOPS
+->it is enable to use properties and methods of an object(parent)
+->it helps to reuse code in different parts of application 

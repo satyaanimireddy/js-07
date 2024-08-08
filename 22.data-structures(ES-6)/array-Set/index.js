@@ -1,4 +1,4 @@
-// how to create 
+// how to create
 
 // var arr = []
 
@@ -45,7 +45,7 @@
 
 // var mySet = new Set([1, 2, 3, 4, 3])
 // console.log(mySet);
-// var myArray = [...mySet]  // converting set into array for accessing set 
+// var myArray = [...mySet]  // converting set into array for accessing set
 // console.log(myArray);
 
 
@@ -100,7 +100,7 @@
 
 // how to loop
 
-var arr = [1, 2, 3]
+// var arr = [1, 2, 3]
 
 // for (var value of arr) {
 //     console.log(value);
@@ -119,18 +119,25 @@ var arr = [1, 2, 3]
 // }
 
 // var x = arr.map((v) => {
-//     // console.log(v);  //it will give each value 
+//     // console.log(v);  //it will give each value
 //     return v
 // })
 // console.log(x);  // [1,2,3]  //new array ni return chesi values add ayyi new array vastundi
 
 
 // var myMap = new Map()
+// myMap.set('name', 'sachin')
+// myMap.set('age', 40)
+
 // console.log(myMap);
+// for (var value of myMap) {
+//     console.log(value);
+// }
 
-mySet = new Set([1, 2, 3])
-console.log(mySet);
 
-for (var value of mySet) {
-    console.log(value);
-}
+// mySet = new Set([1, 2, 3])
+// console.log(mySet);
+
+// for (var value of mySet) {
+//     console.log(value);
+// }

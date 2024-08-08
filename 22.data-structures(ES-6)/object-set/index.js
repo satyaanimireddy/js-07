@@ -53,11 +53,11 @@
 // console.log(obj['age']);
 
 // var myMap = new Map()
-// //adding
+// // //adding
 // myMap.set('name', 'sachin')
 // myMap.set('age', 40)
 
-// //access
+// // //access
 // console.log(myMap.get('name'));
 // console.log(myMap.get('age'));
 // console.log(myMap);
@@ -139,7 +139,7 @@
 // console.log(myMap.has('age'));
 // console.log(myMap.has('color'));
 
-//*** how to find lenght */
+//*** how to find length */
 
 // console.log(myMap.size);  //2
 
@@ -172,11 +172,11 @@
 // console.log(myMap);
 
 // ** how delete all keys at time
-//delete obj 
+//delete obj
 
 // obj = {}
 
-// or 
+// or
 
 // for (var key in obj) {
 //     delete obj[key]
@@ -193,10 +193,10 @@
 
 // **** how to loop keys
 
-var obj = {
-    name: 'sachin',
-    age: 40
-}
+// var obj = {
+//     name: 'sachin',
+//     age: 40
+// }
 // console.log(obj);
 
 // for (var key in obj) {
@@ -205,9 +205,9 @@ var obj = {
 // }
 
 
-var myMap = new Map()
-myMap.set('name', 'sachin')
-myMap.set('age', 40)
+// var myMap = new Map()
+// myMap.set('name', 'sachin')
+// myMap.set('age', 40)
 
 // console.log(myMap);
 
@@ -237,25 +237,25 @@ myMap.set('age', 40)
 // console.log(name);
 // console.log(age);
 
-// iterable data structure ni destructure cheyalante [ ] 
+// iterable data structure ni destructure cheyalante [ ]
 
-var myMap = new Map()
-myMap.set('name1', 'sachin')
-myMap.set('age', 40)
+// var myMap = new Map()
+// myMap.set('name1', 'sachin')
+// myMap.set('age', 40)
 
 
 // console.log(myMap.get('name1'));
 // console.log(myMap.get('age'));
 
-var [v1, v2] = myMap  //destructuring
+// var [v1, v2] = myMap  //destructuring
 
-console.log(v1);
-console.log(v2);
+// console.log(v1);
+// console.log(v2);
 
-var [key, value] = v1
-var [key, value] = v2
+// var [key, value] = v1
+// var [key, value] = v2
 
-console.log(value);
-console.log(value);
+// console.log(value);
+// console.log(value);
 
 

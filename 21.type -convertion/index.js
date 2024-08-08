@@ -19,6 +19,7 @@
 // console.log('5' - "2");
 // console.log('5' - 2);
 // console.log('5' - true);
+// console.log('5' - false);
 // console.log('5' - undefined);
 // console.log('5' - {});
 // console.log('5' - []);
@@ -62,7 +63,7 @@
 // console.log(true - null);
 // console.log(true - {});
 // console.log(true - []);
-// console.log(true +[]);
+// console.log(true + []);
 // console.log(true - function () { });
 
 // null with +, - , *, / , %  operators
@@ -95,13 +96,13 @@
 // console.log(typeof obj);
 
 
-var x = true
+// var x = true
 
-console.log(typeof x);
-var str = String(x)
-var bool = Boolean(x)
-var obj = Object(x)
+// console.log(typeof x);
+// var str = String(x)
+// var bool = Boolean(x)
+// var obj = Object(x)
 
-console.log(typeof str);
-console.log(typeof bool);
-console.log(typeof obj);
+// console.log(typeof str);
+// console.log(typeof bool);
+// console.log(typeof obj);
