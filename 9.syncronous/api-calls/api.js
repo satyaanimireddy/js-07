@@ -2,12 +2,13 @@
 var getAllData = document.getElementById('get-alldata')
 
 function getAllDataFun() {
-    fetch('https://jsonplaceholder.typicode.com/posts').then((res) => {
-        console.log(res)
-        return res.json()
-    }).then((data) => {
-        console.log(data);
-    })
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((res) => {
+            console.log(res)
+            return res.json()
+        }).then((data) => {
+            console.log(data);
+        })
 }
 
 // or
@@ -58,7 +59,6 @@ function sendDataFun() {
     }).catch((err) => {
         console.log(err);
     })
-
 }
 sendData.addEventListener('click', sendDataFun)
 
