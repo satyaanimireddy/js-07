@@ -1,0 +1,10 @@
+div{
+    background-color: green;
+    border: 2px solid black;
+    height: 700px;
+    background-image: url(./mypic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment:fixed;
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    background-color: red;
+}
+
+#header {
+    background-color: orange;
+    height: 100px;
+}
+
+#nav {
+    position: sticky;
+    height: 30px;
+    background-color: black;
+    color: white;
+    top: 200px;
+}
+
+/* z-index css */
+#red {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+
+}
+
+#blue {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 20px;
+    bottom: 100px;
+    z-index: 2;
+
+}
+
+#yellow {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+}

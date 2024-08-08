@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+body{
+    border: 2px solid green;
+    height: 100vh;
+}
+p{
+    /* border: 2px solid red; */
+    /* margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px; */
+    /* margin: auto; */
+    /* margin: 100px 50px; */
+    /* margin: 100px 50px 10px; */
+    /* margin: 100px 0 0 0; */
+    /* margin: 0 100px 0 0; */
+    /* margin: 0 0 100px 0; */
+    /* margin: 0 0 0 100px; */
+
+    /* margin:-20px */
+}
+
+/* margin:auto property  */
+.center{
+    color: red;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: auto;
+    
+}
+.span-center{
+    background-color: brown;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    display: block;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}

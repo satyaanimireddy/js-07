@@ -1,0 +1,14 @@
+.text{
+    text-shadow: 2px 2px 5px rgb(149, 25, 9);
+}
+
+.box{
+    border: 2px solid red;
+    width: 200px;height: 200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px 2px yellow inset;
+
+}

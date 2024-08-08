@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper-div{
+    width: 100%;
+    min-height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+#header-div{
+    background-image: url(./images/bg.jpeg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+}
+#blur-div{
+    width: 100%;
+    background-color: rgba(0,0,0, .6);
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+#nav-div{
+    width: 100%;
+    min-height: 80px;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: row;
+}
+#img-div{
+    flex-basis: 50%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+}
+#buttons-div{
+    flex-basis: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 100px;
+
+}
+
+#buttons-div #eng{
+    margin-right: 20px;
+    padding: 7px 30px;
+    border: 1px solid #fff;
+    background-color: #2e2e2e;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#buttons-div #sign{
+    margin-right: 20px;
+    padding: 7px 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#content-div{
+    width: 100%;
+    min-height: 570px;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-div #heading{
+    font-size: 47px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+#content-div #para1{
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+
+#content-div #para2{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 55px;
+}
+
+#form-div{
+    width: 590px;
+    /* background-color: aqua; */
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-div input{
+    flex-basis: 70%;
+    padding: 12px 230px 15px 15px;
+    text-align: left;
+}
+
+#form-div button{
+    flex-basis: 25%;
+    padding: 10px 20px 16px 15px;
+    background-color: red;
+    border: 0;
+    font-weight: bold;
+    font-style: 18px;
+    color: white;
+    border-radius: 3px;
+    margin-left: 5px;
+
+
+}
+#features-div{
+    width: 100%;
+    min-height: 1100px;
+    background-color: black;
+    color: white;
+    /* margin-top: 100px; */
+}
+
+#features-div #row{
+    width: 100%;
+    padding: 50px auto;
+    /* margin: 50px auto; */
+    min-height: 275px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    border-top: 8px solid rgb(45,45,45);
+    padding-top: 100px;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+#features-div #row #text-div{
+    flex-basis: 50%;
+    font-size: 22px;
+}
+#features-div #row #text-div p{
+    font-size: 22px;
+    margin-top:20px;
+    line-height: 35px;
+    width: 80%;
+
+}
+#features-div #row #text-div h1{
+    font-size: bold;
+}
+#features-div #row #image-div{
+    flex-basis: 50%;
+    padding-bottom: 100px;
+}
+
+/* faq */
+
+#faq-div{
+    width: 100%;
+    min-height: 800px;
+    background-color: black;
+    color: white;
+    border-top: 8px solid rgb(45,45,45);
+    padding-top: 80px;
+}
+#faq-div h1{
+    text-align: center;
+    font-size: 46px;
+}
+#faq-div #accordian{
+    width: 70%;
+    margin: 30px auto;
+}
+#faq-div #accordian li{
+    list-style: none;
+    line-height: 55px;
+    margin-top: 10px;
+}
+#accordian input[type='radio']{
+    display: none;
+}
+#accordian #content {
+    width: 100%;
+    max-height: 0;
+    background-color: rgb(56,57,58);
+    overflow: hidden;
+}
+#faq-div #accordian label{
+    width: 100%;
+    padding: 10px 8px 10px 8px;
+    background-color: rgb(56,57,58);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+#faq-div #accordian label::after{
+    content: "+";
+    position: absolute;
+    right: 22px;
+    font-size: 38px;
+}
+#accordian input[type='radio']:checked+label+#content{
+    width: 100%;
+    max-height: 700px;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin-top: 4px;
+}
+#accordian input[type='radio']:checked+label::after{
+    transform: rotate(140deg);
+    transition-duration: 1s;
+}
+
+#faq-div #para2{
+   text-align: center;
+   font-size: 20px;
+   padding-top: 30px;
+}
+#faq-div #form-div{
+    margin: 30px auto;
+    padding-bottom: 50px;
+}
+
+/* faq-end */
+
+
+/* footer */
+
+#footer-div{
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: black;
+    min-height: 300px;
+    color: rgb(186, 182, 182);
+    padding-top: 80px;
+    border-top: 8px solid rgb(45,45,45);
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+#footer-div #ph-para{
+    font-size: 18px;
+}
+#footer-div a{
+    font-size: 16px;
+    color: rgb(182, 168, 168);
+}
+#footer-div #footer-row{
+    min-height: 160px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 36px;
+}
+#footer-div #footer-row #col{
+    display: flex;
+    flex-direction: column;
+    padding-right: 130px;
+    
+}
+#footer-div #eng{
+    width: 100px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(75,75,75);
+    margin-bottom: 13px;
+}
+#footer-div #copy-para{
+    margin-bottom: 60px;
+}
+
+/* footer-end */
+
+/* responsive design styles */
+@media (max-width: 600px) {
+
+    #header-div {
+        min-height: 520px;
+    }
+    #blur-div {
+        min-height: 520px;
+    }
+
+    #content-div{
+        min-height: 520px;
+        padding: 20px;
+        text-align: center;
+        line-height: 110px;
+    }
+    #form-div {
+        width: 530px;
+    }
+
+
+    #nav-div #img-div{
+        padding-left: 20px;
+    }
+    #buttons-div {
+        padding-right: 10px;
+    }
+    #buttons-div #eng{
+        padding: 7px 25px;
+    }
+    #content-div #heading{
+        padding: 18px;
+        font-size: 32px;
+        line-height: 45px;
+    }
+    #content-div #para1 {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    #content-div #para2{
+        line-height: 40px;
+    }
+    #features-div #row{
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    #footer-div {
+        padding-left: 20px;
+    }
+    #footer-div #footer-row #col{
+        flex-basis: 50%;
+    }
+
+}
+
+
+
+

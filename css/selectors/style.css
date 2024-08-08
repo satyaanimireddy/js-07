@@ -1,0 +1,73 @@
+/* div>p{
+    background: blue;
+    color: red; 
+} */
+/* #parent p {
+    background: violet;
+    color: red;
+} */
+ /* #parent + #parent2{
+    background: yellow;
+} */
+/* #parent ~ p{
+    background: red;
+    color: white;
+}  */
+
+/* *{
+    color: aqua;
+    background: red;
+} */
+
+/* a:active{
+    background: green;
+} */
+
+/* p::first-letter{
+    background: pink;
+    color: aqua;
+}
+p::first-line{
+    background: pink;
+    color: aqua;
+} */
+/* p::after{
+    content: "Hello";
+    background: green;
+    color: blue;
+} */
+/* p::before{
+    content: "Hello";
+    background: green;
+    color: blue;
+} */
+
+/* p,div,h1{
+    background: green;
+    color: aqua;
+} */
+
+/* [type="text"]{
+    background: red;
+}[type="password"]{
+    background: yellow;
+}[type="title"]{
+    background: violet;
+}
+
+[title="para"]{
+    background: blue;
+} */
+
+/* [title^='hello']{
+    background-color: brown;
+} */
+/* [title$='hello']{
+    background-color: rgb(94, 64, 64);
+} */
+
+/* [title*='hello']{
+    background-color: rgb(168, 188, 15);
+} */
+
+

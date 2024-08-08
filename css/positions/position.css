@@ -1,0 +1,95 @@
+/* html{
+    border: 2px solid green;
+    height: 1000px;
+     margin-top: 20px;
+    margin-left: 20px; 
+}
+body{
+    width: 300px;
+    height: 900px;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+div{
+    width: 200px;
+    height: 800px;
+    border: 2px solid black;
+    
+    position: relative;
+}
+p{
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+    color: red;
+    text-align: center;
+    position: sticky;
+    top: 40px;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    position: relative;
+}
+
+.navbar{
+    width: 400px;
+    height: 50px;
+    position: absolute;
+     top: 30px;
+     left: 500px; 
+     bottom: 0; 
+    right: 10px;
+    background-color: aqua;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;padding-top: 20px;
+}  */
+
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+
+}
+
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+
+}
+
+#yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    bottom: 200px;
+    z-index: 1;
+}
+
+/* .wts-parent{
+    position: relative;
+} */
+/* .wts{
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+} */

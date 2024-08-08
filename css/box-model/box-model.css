@@ -1,0 +1,63 @@
+/* .one{
+    width: 300px;
+    height: 50px;
+    background-color:chocolate;
+    border: 20px solid green;
+    padding: 20px;
+    margin: 20px;
+}
+.two{
+    width: 300px;
+    height: 50px;
+    background-color:rgb(24, 162, 12);
+    border: 20px solid rgb(206, 12, 32);
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+} */
+
+/* .span-one{
+    box-sizing: content-box;
+    background-color: rgb(20, 148, 20);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    padding: 10px;margin: 10px;
+}
+.span-two{
+    box-sizing: border-box;
+    background-color: rgb(216, 30, 204);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    padding: 10px;margin: 10px;
+} */
+
+
+/* js-06 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+div {
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    border: 2px solid red;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+
+}

@@ -1,0 +1,60 @@
+
+
+.div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    animation-name: mydiv;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+
+/* @keyframes mydiv{
+    from{
+        background-color: yellow;
+        
+    }
+    to{
+        background-color: red;
+        font-weight: bold;
+        font-size: 50px;
+        width: 400px;
+        height: 400px;
+    }
+} */
+
+@keyframes mydiv{
+    0%{
+        background-color:green;
+        width: 300px;
+    }
+    20%{
+        background-color: #9d6d13;
+        height: 300px;
+    }
+    40%{
+        background-color: #65074d;
+        width: 500px;
+    }
+    60%{
+        background-color: #0c81a8;
+        height: 500px;
+    }
+    80%{
+        background-color: #2f0a50;
+        width: 600px;
+    }
+    100%{
+        background-color: #68ba17;
+        height: 600px;
+    }
+}

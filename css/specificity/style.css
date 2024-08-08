@@ -1,0 +1,39 @@
+/* h1{
+    background-color: yellow;
+}
+h1{
+    background-color: blue;
+} */
+.hello-1{
+    color: greenyellow;
+}
+div > h1{
+    color: blue;
+}
+
+
+h1{
+    color: green;
+}
+*{
+    background: aqua;
+    color: red !important;
+}
+
+
+[title="hello-1"]{
+    color: black;
+}
+.hello-1{
+    color: pink;
+}
+
+h1:hover{
+    color: rgb(25, 159, 90);
+}
+#hello-1{
+    color: gray;
+}#hello-1:hover{
+    color: yellow;
+}
+

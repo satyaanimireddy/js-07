@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+/* .container{
+    width: 900px;
+    height: 500px;
+    display: grid;
+    margin: 100px auto;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 400px 200px 200px 100px;
+} */
+
+/* .container{
+    width:800px ;
+    height:500px ;
+    display: grid;
+    margin: 100px auto;
+    grid-template-rows:100px 300px 100px ;
+    grid-template-columns:200px 150px 150px 300px ;
+} */
+.container{
+    width:600px ;
+    height:500px ;
+    display: grid;
+    margin: 100px auto;
+    grid-template-rows: 250px 250px;
+    grid-template-columns:300px 300px;
+}
+.box1{
+    background-color: #7d960c;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}.box2{
+    background-color: #1dae68;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}.box3{
+    background-color: #830c61;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}.box4{
+    background-color: #300ce1;
+}.box5{
+    background-color: #de8f0f;
+}.box6{
+    background-color: #69090e;
+}.box7{
+    background-color: #bcba1c;
+}.box8{
+    background-color: #7d960c;
+}
+.box9{
+    background-color: #7d960c;
+}.box10{
+    background-color: #1dae68;
+}.box11{
+    background-color: #830c61;
+}.box12{
+    background-color: #300ce1;
+}

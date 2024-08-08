@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent1 {
+    border: 2px solid red;
+}
+
+.clear-left::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+.child1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+
+}
+
+.child2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(26, 195, 68);
+    float: left;
+
+}
+
+.child3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(150, 12, 95);
+    float: left;
+}
+
+.parent2 {
+    border: 2px solid rgb(128, 122, 0);
+}
+
+.child21 {
+    width: 100px;
+    height: 100px;
+    background-color: #330369;
+    float: right;
+}
+
+.child22 {
+    width: 100px;
+    height: 100px;
+    background-color: #6f960c;
+    float: right;
+}
+
+.child23 {
+    width: 100px;
+    height: 100px;
+    background-color: #098ba2;
+    float: right;
+
+}
+
+.clear-right::after {
+    content: '';
+    display: block;
+    clear: right;
+}
+
+.parent3 {
+    border: 2px solid pink;
+}
+
+.child31 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+
+.child32 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+
+.child33 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    float: right;
+    /* float: none; */
+
+}
+
+.clear-both::after {
+    content: '';
+    display: block;
+    clear: both;
+}

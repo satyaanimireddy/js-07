@@ -1,0 +1,18 @@
+div{
+ /* border-width: 3px;
+ border-style: solid;
+ border-color: red; */
+ border: 3px solid black;
+/* border-round */
+ height: 400px;
+ width: 400px;
+ border-radius: 200px;
+ /* border-img */
+ border-image: url(../background/mypic.jpeg);
+ border-image-slice: fill 30;
+ /* border-image-slice: 30%; */
+ border-image-repeat: repeat;
+ border-image-width: 10px;
+ border-image-outset: 5px;
+ 
+}

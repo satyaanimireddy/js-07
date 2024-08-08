@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-div {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(197, 13, 203);
+    color: rgb(35, 144, 71);
+    margin: 200px auto;
+    text-align: center;
+    line-height: 150px;
+    animation-name: first-animation;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    /* animation-iteration-count: 3; */
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+    /* animation-play-state: paused; */
+}
+
+@keyframes first-animation {
+    25% {
+        background-color: red;
+        color: yellow;
+    }
+
+    50% {
+        background-color: green;
+        color: blue;
+    }
+
+    75% {
+        background-color: rgb(26, 180, 197);
+        color: rgb(203, 34, 135);
+    }
+
+    100% {
+        background-color: rgba(71, 22, 196, 0.859);
+        color: rgb(167, 14, 14);
+    }
+}

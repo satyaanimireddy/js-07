@@ -1,0 +1,33 @@
+#container{
+    border: 2px solid black;
+    /* background-color: #ca1d1d;
+    width: 100%;
+    height: 800px; */
+}
+.claer-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#child1{
+    background-color: #10a239;
+    width: 100px;
+    height: 100px;
+    /* float: left; */
+    float: right;
+
+    
+}#child2{
+    background-color: #a85011;
+    width: 100px;
+    height: 100px;
+    /* float: left; */
+    float: right;
+
+}#child3{
+    background-color: #640ce7;
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
