@@ -1,8 +1,8 @@
-var arr = [1, 2, 3, 4, 5]
+// var arr = [1, 2, 3, 4, 5]
 //how to access
 
 
-console.log(arr)
+// console.log(arr)
 // console.log(arr[0])
 // console.log(arr[1])
 // console.log(arr[2])
@@ -132,11 +132,11 @@ console.log(arr)
 
 // 7.how to copy/clone array:
 
-var originalArr = ['sachin', { road: 101 }, () => { }]
+// var originalArr = ['sachin', { road: 101 }, () => { }]
 
 
 // var coppiedArr = originalArr  //normal copy
-var coppiedArr = JSON.parse(JSON.stringify(originalArr))  //deep copy
+// var coppiedArr = JSON.parse(JSON.stringify(originalArr))  //deep copy
 
 // var coppiedArr = Object.assign([], originalArr)  //shallow copy
 
@@ -144,12 +144,12 @@ var coppiedArr = JSON.parse(JSON.stringify(originalArr))  //deep copy
 // var coppiedArr = [...originalArr]  //shallow copy(es-6)
 
 
-coppiedArr[0] = 'kohli'
-coppiedArr[1].road = 65
+// coppiedArr[0] = 'kohli'
+// coppiedArr[1].road = 65
 // coppiedArr[1] = 201
 
-console.log(originalArr)
-console.log(coppiedArr)
+// console.log(originalArr)
+// console.log(coppiedArr)
 
 // ****example
 // const originalArray = [1, 2, 3, 4, 5];

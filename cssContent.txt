@@ -6,13 +6,12 @@
 1. What is CSS
    ===========
 
-CSS stands for Cascading Style Sheet. It is a styling language, by using CSS we can style the html content or elements on webpage by using CSS properties. CSS properties will be in key value pair. 
+CSS stands for Cascading Style Sheet. It is a styling language, by using CSS we can style the html content or
+elements on webpage by using CSS properties. CSS properties will be in key value pair. 
 
 
 2. How many ways we can add css to html elements
    =============================================
-
-
    1) Inline 
 
    - By using style attribute we can apply css directly to that html element. By using inline 
@@ -20,17 +19,14 @@ CSS stands for Cascading Style Sheet. It is a styling language, by using CSS we 
 
    2) Internal
 
-   - By using style tag in head tag we can apply css to many html elements in the same html             file at a time html elements. 
+   - By using style tag in head tag we can apply css to many html elements in the same html file at a time html elements. 
 
    3) Extrenal
 
    - By using external style sheet we can apply css to many html elements in different html             files at a time. We can link external css file to html file by using link tag in head tag.
 
-
-
 3. CSS selectors
    =============
- 
   - CSS selectors are used to select the HTML elements you want to style.
 
   - We can divide CSS selectors into several categories:
@@ -57,71 +53,60 @@ CSS stands for Cascading Style Sheet. It is a styling language, by using CSS we 
 
 1.Type (Element) Selector:
   -----------------------
-
 Selects elements by their HTML tag name.
 
 Example: p { color: blue; }
 
 2.Class Selector:
   --------------
-
 Selects elements by their class attribute.
 
 Example: .my-class { font-weight: bold; }
 
 3.ID Selector:
   -----------
-
 Selects a single element by its unique ID attribute.
 
 Example: #my-id { background-color: yellow; }
 
 4.Universal Selector:
   ------------------
-
 Selects all elements on the page.
 
 Example: * { margin: 0; }
 
 5.Descendant Selector (all childs):
   -------------------
-
 Selects an element that is a descendant of another element.
 
 Example: ul li { list-style: square; }
 
 6.Child Selector (direct child):
   --------------
-
 Selects an element that is a direct child of another element.
 
 Example: ul > li { font-style: italic; }
 
 7.Adjacent Sibling Selector (next sibling):
   -------------------------
-
 Selects an element that is immediately preceded by another element.
 
 Example: h2 + p { color: red; }
 
 8.General Sibling Selector (next all siblings):
   ------------------------
-
 Selects elements that are siblings of a specified element.
 
 Example: h2 ~ p { font-size: 18px; }
 
-
 9.Pseudo-Class Selector:
    ---------------------
-
 Selects elements based on a specific state or interaction, such as :hover, :active, and :focus.
 
 Example: a:hover { text-decoration: underline; }
 
 10.Pseudo-Element Selector:
    -----------------------
-
 Selects and styles a part of an element's content, such as  
 
 => ::first-letter ::first-line and ::before and ::after
@@ -145,7 +130,6 @@ Pseudo-elements in CSS are used to style a specific part of an element. They are
 
 11.Grouping Selector:
    -----------------
-
 Allows you to apply the same styles to multiple selectors.
 
 Example: h1, h2, h3 { font-family: Arial, sans-serif; }
@@ -153,46 +137,37 @@ Example: h1, h2, h3 { font-family: Arial, sans-serif; }
 
 12.Attribute Selector:
   ------------------
-
 Selects elements based on the presence or value of their attributes.
 
 Example: input[type="text"] { border: 1px solid #ccc; }
 
 
-
 13.Attribute Value Starts With Selector:
    ------------------------------------
-
 Selects elements whose attribute values start with a specified string.
 
 Example: [href^="https://"] { color: blue; }
 
 14.Attribute Value Ends With Selector:
    ----------------------------------
-
 Selects elements whose attribute values end with a specified string.
 
 Example: [src$=".jpg"] { border: 1px solid #ccc; }
 
 15.Attribute Value Contains Selector:
    ---------------------------------
-
 Selects elements whose attribute values contain a specified substring.
 
 Example: [alt*="cat"] { border: 2px solid orange; }
 
-
-
 4. CSS Specifcity
    ==============
-
 When we apply more than one set of CSS rules to the same element, the browser will have to decide which specific set of css will be applied to the element. The rules the browser follows are collectively called Specificity.
 
    Note:
    ---- 
    - When two or more selectors have equal specificity, the last(latest) one counts.
    - Universal selectors have least specificity.
-
 
    1- !important rule (overrides all other specificity)
 
@@ -208,38 +183,29 @@ When we apply more than one set of CSS rules to the same element, the browser wi
 
    7- Universal selectors (*)
 
-  
-
 When comparing the specificity of universal selectors and group selectors, group selectors can have a higher specificity if they include selectors with higher specificity values (e.g., IDs or classes). Universal selectors have low specificity by default.
-
 
 5. Text Properties 
    ===============
-
 CSS (Cascading Style Sheets) provides a wide range of text properties that allow you to control the appearance and layout of text within HTML elements. A list of common text properties in CSS.
-
 
 1.color:
   -----
- 
 Sets the color of the text.
 Example: color: red;
 
 2.direction:
   ---------
-
 Sets the text direction, such as ltr (left-to-right) or rtl (right-to-left).
 Example: direction: rtl;
 
 3.text-transform:
   --------------
-
 Modifies the capitalization of text, e.g., uppercase or lowercase or capitalize.
 Example: text-transform: uppercase;
 
 4.text-shadow:
   -----------
-
 It gives shadow to text.
  
 text-shadow: x-axis y-axis blur color
@@ -247,78 +213,63 @@ text-shadow: 10px 0px 10px red
 
 5.text-align:
   ----------
-
 Aligns the text horizontally within its container.
 Example: text-align: center;
 
 6.text-decoration:
   ---------------
-
 Controls decorations like underline, overline, and line-through.
 Example: text-decoration: underline;
 
 7.text-indent:
    -----------
-
 Sets the indentation of the first line of text within an element.
 Example: text-indent: 20px;
 
 
 8.font-family:
   -----------
-
 Specifies the font family for the text.
 Example: font-family: Arial, sans-serif;
 
 9.font-size:
    ---------
-
 Sets the size of the text.
 Example: font-size: 16px;
 
 10.font-weight:
    -----------
-
 Defines the thickness or boldness of the text.
 Example: font-weight: bold;
 
 11.font-style:
    ----------
-
 Specifies the style of the text, such as italic.
 Example: font-style: italic;
 
 
 12.line-height:
    -----------
-
 Sets the height of a line of text, controlling spacing between lines.
 Example: line-height: 1.5;
 
 
 13.letter-spacing:
   --------------
-
 Adjusts the space between individual characters.
 Example: letter-spacing: 2px;
 
 14.word-spacing:
   ------------
-
 Controls the spacing between words in a block of text.
 Example: word-spacing: 4px;
 
 These are some of the essential text properties in CSS. By using these properties, you can customize the appearance and layout of text on your web pages, making it an integral part of web design and typography.
 
-
-
 6. Background Properties
    =====================
-
-
 1.background-color:
   ---------------
-
 <style>
   .example {
     background-color: #F0F0F0;
@@ -332,7 +283,6 @@ These are some of the essential text properties in CSS. By using these propertie
 
 2.background-image:
   ----------------
-
 <style>
   .example {
     background-image: url('image.jpg');
@@ -346,7 +296,6 @@ These are some of the essential text properties in CSS. By using these propertie
 
 3.background-repeat: ( repeat (default) | repeat-x | repeat-y | no-repeat )
   -----------------
-
 => Repeating horizontally and vertically 
 
 .example-repeat {
@@ -408,7 +357,6 @@ ex:
 
 5.background-size:
   ---------------
-
 => Original size (auto) 
 
 .example-auto {
@@ -483,7 +431,6 @@ The 'contain' tells the browser to show the whole image without loosing image.
 
 Ex:
 --
-
 <style>
   .example {
     background-image: url('image.jpg');
@@ -498,11 +445,8 @@ Ex:
 
 These are just a few examples of how you can use CSS background properties to style and enhance the backgrounds of HTML elements. You can combine these properties and adjust their values to achieve the desired visual effects in your web pages.
 
-
-
 7. Border properties
    =================
-
 In CSS (Cascading Style Sheets), you can use various properties to control the appearance and behavior of borders around elements such as text, images, and containers. Here are some common border properties in CSS:
 
 1)border-width:
@@ -521,7 +465,6 @@ border-color: #FF0000;
 
 3)border-style:
 -------------- 
-
 This property sets the style of the border, and it can take values like "solid," "dashed," "dotted," "double," "none," and more. 
 
 border-style: solid;
@@ -529,14 +472,12 @@ border-style: solid;
 
 4)border-radius:
 ---------------
- 
 This property sets the radius of the corners of an element, creating rounded corners. You can specify different values for each corner or use a single value for all corners.
  
 border-radius: 10px;
 
 5)border-image:
 --------------
- 
 This property allows you to use an image as a border instead of a solid color. It's a more advanced property and requires defining an image to use as a border.
 
 border-image: url(border-image.png) 27 27 27 27 round round;
@@ -557,20 +498,15 @@ The border-image-outset property specifies the amount by which the border image 
 
 border:
 ------ 
-
 This is a shorthand property that combines border-width, border-style, and border-color into a single declaration.
  
 border: (width) 1px (style)solid (color) #000;
 
 
-
-
 8. Margin and Padding properties
    =============================
-
 margin
 ------
-
 The CSS margin property is used to give space around an element on a web page. It defines the area outside
 the element's border. Margins are used to create space and separation between elements.
 
@@ -598,18 +534,14 @@ The element will then take up the specified width, and the remaining space will 
 
 Margin Collapse
 ---------------
-
 Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest
  of the two margins.
 
 This does not happen on left and right margins! Only top and bottom margins!
 
-
 padding
 -------
-
 Padding is used to create space within an element, between the element's content and its border.
-
 
 1)padding-top: 10px;
 
@@ -630,13 +562,11 @@ Padding is used to create space within an element, between the element's content
 
 margin vs padding
 -----------------
-
 In CSS, both margin and padding are properties used to control spacing, but they affect the layout of elements
 in different ways:
 
 Margin:
 ------
-
 -Margin control space outside an element, between the element's border and neighboring  elements.
 -Margins create separation between elements.
 -Margin values can be positive (adding space) or negative (reducing space).
@@ -655,7 +585,6 @@ neighboring elements.
 
 Margin collapse
 ---------------
-
 The concept of "margin collapsing" in CSS refers to how margins between adjacent elements are computed when
 they are touching or close to each other. When two or more vertical margins meet or overlap under specific
 conditions, they don't simply add up or stack on top of each other as you might expect. Instead, they
@@ -693,10 +622,8 @@ div {
 In this example, if a <p> element and a <div> element are placed next to each other, the effective vertical space between them will be 20px, not 30px, because the larger of the two margins (20px) takes precedenc
 
 
-
 Padding:
 -------
-
 -Padding controls the space inside an element, between the element's content and its border.
 -Padding is used to create space within an element, affecting the content's position within the   element's boundaries.
 -Padding values can be positive (adding space) and are never negative.
@@ -736,7 +663,6 @@ In this example, the padding will increase the height of each inline element, bu
 
 9. Width and height properties
    ===========================
-
 Note: width and height in % => depends on  parent's width and height.
 ====
 
@@ -796,12 +722,8 @@ You can use these properties individually or in combination to control the heigh
 page layout. They are particularly useful when dealing with responsive web design, ensuring that elements
 adapt to various screen sizes and content while maintaining a defined range of height.
 
-
-
-
 10. Display Property
     ================
-
 In CSS, the display property is used to control how an HTML element is displayed in the web browser.
 It defines the type of box an element generates, which in turn affects its layout and rendering on the
 web page. There are various display property values that determine the element's behavior. Here are some
@@ -809,21 +731,18 @@ common display property values:
 
 1.block:
 -------
-
 The element is displayed as a block-level element.
 It takes up the full width available in its parent container and starts on a new line.
 Examples of block-level elements include <div>, <p>, and <h1>.
 
 2.inline:
 --------
-
 The element is displayed as an inline-level element.
 It takes up only as much width as necessary and does not start on a new line.
 Examples of inline-level elements include <span>, <a>, and <strong>.
 
 3.inline-block:
 --------------
-
 Combines characteristics of both inline and block.
 The element is inline, but it can have its own width and height, as well as margin and padding.
 Elements with this display type can be positioned inline, but they can have block-level styling.
@@ -847,31 +766,29 @@ It doesn't occupy any space in the layout.
 
 5.table:
 -------
-
 The element is displayed as a table element.
 It can have child elements with table-row, table-cell, and other table-related display values.
 
 6.flex:
 ------
-
 The element becomes a flex container, and its children become flex items.
-It is used to create flexible and responsive layouts, allowing elements to adjust their sizes based on available space.
+It is used to create flexible and responsive layouts, allowing elements to adjust their sizes based
+on available space.
 
 7.grid:
 ------
-
 The element becomes a grid container, and its children become grid items.
 It is used to create grid-based layouts, providing fine control over the arrangement of items.
 
-
-display: none vs visibility: hidden vs opacity: 0
+display: none vs visibility: hidden vs opacity: 
 =================================================
-
-In CSS, display: none, visibility: hidden, and opacity: 0 are three different ways to hide elements on a web page, and they have distinct behaviors and use cases.
+In CSS, display: none, visibility: hidden, and opacity: 0 are three different ways to hide elements on
+a web page, and they have distinct behaviors and use cases.
 
 display: none
 -------------
-When you apply display: none to an element, the element is completely removed from the layout of the page. It takes up no space, and the document flows as if the element does not exist.
+When you apply display: none to an element, the element is completely removed from the layout of the page.
+It takes up no space, and the document flows as if the element does not exist.
 Child elements of the hidden element are also hidden, and they do not affect the layout.
 Events and interactions (e.g., clicking, hovering) cannot target hidden elements.
 Good for situations where you want to completely remove an element from view and layout.
@@ -882,7 +799,8 @@ element {
 
 visibility: hidden
 ------------------
-When you apply visibility: hidden to an element, the element is still part of the layout, but it is not visible. It still takes up space on the page, as if it were still visible.
+When you apply visibility: hidden to an element, the element is still part of the layout, but it is not visible.
+It still takes up space on the page, as if it were still visible.
 Child elements of the hidden element are also hidden, but they still affect the layout.
 Events and interactions can still target hidden elements.
 Useful when you want to hide an element but maintain its space in the layout.
@@ -893,142 +811,187 @@ element {
 
 opacity: 0
 ----------
-
-When you set opacity: 0, the element becomes fully transparent, but it still occupies the same space in the layout.
+When you set opacity:0,the element becomes fully transparent,but it still occupies the same space in the layout.
 Child elements of the transparent element remain visible and affect the layout.
 Events and interactions can target the transparent elements.
-Useful when you want to hide an element while maintaining its layout position and possibly animate the element's visibility.
+Useful when you want to hide an element while maintaining its layout position and possibly animate the
+element's visibility.
 
 element {
   opacity: 0;
 }
 
-In summary, the choice of which property to use (display, visibility, or opacity) depends on your specific requirements. If you want to completely remove the element and its space from the layout, display: none is suitable. If you want to hide the element but maintain its space in the layout, visibility: hidden is appropriate. If you want to hide the element but keep its space and potentially use transitions or animations, opacity: 0 is a good choice.
+In summary, the choice of which property to use (display, visibility, or opacity) depends on your specific
+requirements. If you want to completely remove the element and its space from the layout, display: none is
+suitable. If you want to hide the element but maintain its space in the layout, visibility: hidden is
+appropriate. If you want to hide the element but keep its space and potentially use transitions or animations,
+opacity: 0 is a good choice.
 
 
 11) Block level vs Inline elements default behaviour
     ================================================
-
-In HTML, content placement within block-level and inline elements follows specific rules that determine how elements are displayed and how they interact with the surrounding content.
+In HTML, content placement within block-level and inline elements follows specific rules that determine how
+elements are displayed and how they interact with the surrounding content.
 
 Block-Level Elements:
 --------------------
-
-Block-level elements create distinct blocks or containers within the layout. They naturally start on a new line and take up the full available width of their parent container. Content within block-level elements is displayed in a "block" format.
+Block-level elements create distinct blocks or containers within the layout. They naturally start on a new
+line and take up the full available width of their parent container. Content within block-level elements is
+displayed in a "block" format.
 
 Here's how content is typically placed within block-level elements:
 -------------------------------------------------------------------
-
 On New Lines: 
 ------------
-Block-level elements start on a new line, and subsequent block-level elements are displayed below the previous one. This means each block-level element creates a new "block" in the layout.
+Block-level elements start on a new line, and subsequent block-level elements are displayed below the previous
+one. This means each block-level element creates a new "block" in the layout.
 
 Full Width: 
 ----------
-By default, block-level elements span the full width of their parent container, unless specified otherwise using CSS properties like width.
+By default, block-level elements span the full width of their parent container, unless specified otherwise
+using CSS properties like width.
 
 Vertical Stacking:
 ----------------- 
-Block-level elements stack vertically, creating a clear separation between different sections or blocks of content. Common examples of block-level elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), lists (<ul>, <ol>), and div containers (<div>).
+Block-level elements stack vertically, creating a clear separation between different sections or blocks of
+content. Common examples of block-level elements include paragraphs (<p>), headings (<h1>, <h2>, etc.),
+lists (<ul>, <ol>), and div containers (<div>).
 
 
 <div>This is a block-level container.</div>
 <div>Another block-level container.</div>
 
--Block-level elements naturally create distinct "blocks" within the layout. Content placed within   block-level elements is organized into separate, vertically stacked sections.
--Block-level elements extend the full width of their parent container by default. This means that   they create new lines for each block-level element, and each block-level element takes up the    entire width available.
--Block-level elements are ideal for structuring and organizing the content into different sections  or divisions of a web page.
+-Block-level elements naturally create distinct "blocks" within the layout. Content placed within block-level
+ elements is organized into separate, vertically stacked sections.
+-Block-level elements extend the full width of their parent container by default. This means that they create
+ new lines for each block-level element, and each block-level element takes up the    entire width available.
+-Block-level elements are ideal for structuring and organizing the content into different sections or 
+divisions of a web page.
 
 
 Inline Elements:
 ---------------
-
-Inline elements, flow within the content of their parent block-level elements. They don't create new lines or block-level structures themselves.
+Inline elements, flow within the content of their parent block-level elements. They don't create new lines 
+or block-level structures themselves.
 
 Here's how content is typically placed within inline elements:
 -------------------------------------------------------------
 
 Within Text Flow:
 ---------------- 
-Inline elements flow within the text content of their parent block-level element. They do not create new lines, and their width adjusts to fit the content they contain.
+Inline elements flow within the text content of their parent block-level element. They do not create new lines,
+and their width adjusts to fit the content they contain.
 
 No Line Breaks:
 -------------- 
-Inline elements do not introduce line breaks, and they wrap to the next line only if there is not enough horizontal space within their parent block-level element.
+Inline elements do not introduce line breaks, and they wrap to the next line only if there is not enough
+horizontal space within their parent block-level element.
 
 Horizontal Flow:
 --------------- 
-Content within inline elements flows from left to right (in left-to-right writing systems) or from right to left (in right-to-left writing systems).
+Content within inline elements flows from left to right (in left-to-right writing systems) or from right
+to left (in right-to-left writing systems).
 
 
 <p>This is a <span>inline element</span> within a paragraph.</p>
-In this example, the <span> element is an inline element and flows within the text of the paragraph. It doesn't introduce new lines or separate blocks of content.
+In this example, the <span> element is an inline element and flows within the text of the paragraph. 
+It doesn't introduce new lines or separate blocks of content.
 
--Inline elements are designed to flow within the content of a block-level element. They do not   create distinct blocks or new lines by default.
--Inline elements are often used for applying formatting and styling to specific parts of text  or for embedding elements within a paragraph of text.
--By default, inline elements do not create a new block formatting context and flow within the    content of their parent block-level element. They only take up as much horizontal space as     necessary to contain their content.
--Inline elements do not accept width or height properties. The margin-top and margin-bottom     properties do not create vertical spacing between inline elements in the same way they do for   block-level elements.
+-Inline elements are designed to flow within the content of a block-level element. They do not create
+ distinct blocks or new lines by default.
+-Inline elements are often used for applying formatting and styling to specific parts of text  or for
+ embedding elements within a paragraph of text.
+-By default, inline elements do not create a new block formatting context and flow within the  content of
+their parent block-level element. They only take up as much horizontal space as     necessary to contain
+their content.
+-Inline elements do not accept width or height properties. The margin-top and margin-bottom  properties 
+do not create vertical spacing between inline elements in the same way they do for   block-level elements.
 
 
-To control the placement of content within both block-level and inline elements, you can use various HTML and CSS properties, such as display, position, and others, to modify their default behaviors and achieve the desired layout and structure in your web pages.
+To control the placement of content within both block-level and inline elements, you can use various HTML
+and CSS properties, such as display, position, and others, to modify their default behaviors and achieve
+the desired layout and structure in your web pages.
 
 
 Content vs width vs height vs margin vs padding vs border
 =========================================================
 
-The behavior of content, width, height, margin, padding, and border for inline and block-level elements in HTML and CSS differs due to their default display characteristics.
+The behavior of content, width, height, margin, padding, and border for inline and block-level elements in
+HTML and CSS differs due to their default display characteristics.
 
 Content:
 -------
 Block-Level Elements: 
 
-Block-level elements create separate blocks or containers within the layout. They naturally start on new lines and contain their content within distinct blocks. Block-level elements can hold other elements and text content.
+Block-level elements create separate blocks or containers within the layout. They naturally start on new
+lines and contain their content within distinct blocks. Block-level elements can hold other elements and
+text content.
 
 Inline Elements: 
 
-Inline elements flow within the text content of their parent block-level element. They do not create new lines or separate blocks and are typically used for styling portions of text or inline content.
+Inline elements flow within the text content of their parent block-level element. They do not create new
+lines or separate blocks and are typically used for styling portions of text or inline content.
 
 Width and Height:
 ----------------
 Block-Level Elements: 
 
-Block-level elements, by default, extend across the full width of their parent container. You can explicitly set their width using CSS to control the element's horizontal size, and you can set their height to control their vertical size.
+Block-level elements, by default, extend across the full width of their parent container. You can explicitly
+set their width using CSS to control the element's horizontal size, and you can set their height to control
+their vertical size.
 
 Inline Elements: 
 
-Inline elements take up only as much horizontal space as necessary to contain their content. Applying a width or height property to inline elements doesn't typically have the same effect as it does for block-level elements. Inline elements are usually self-sizing based on their content.
+Inline elements take up only as much horizontal space as necessary to contain their content. Applying a
+width or height property to inline elements doesn't typically have the same effect as it does for block-level
+elements. Inline elements are usually self-sizing based on their content.
 
 Margin:
 ------
 Block-Level Elements: 
 
-Block-level elements use the margin property to create spacing around them. Margins apply both vertically and horizontally, creating space outside the element's border. You can set margins for all four sides individually.
+Block-level elements use the margin property to create spacing around them. Margins apply both vertically
+and horizontally, creating space outside the element's border. You can set margins for all four sides
+individually.
 
 Inline Elements:
  
-Inline elements can have horizontal margins (left and right), but their vertical margins (top and bottom) may not create the same spacing effects as they do for block-level elements. Margins often affect the horizontal layout and the positioning of the inline elements in relation to surrounding content.
+Inline elements can have horizontal margins (left and right), but their vertical margins (top and bottom)
+may not create the same spacing effects as they do for block-level elements. Margins often affect the
+horizontal layout and the positioning of the inline elements in relation to surrounding content.
 
 Padding:
 -------
 Block-Level Elements: 
 
-Block-level elements use the padding property to create spacing within the element, affecting the space between the element's content and its border. Padding properties apply both vertically and horizontally and can be set for all four sides individually.
+Block-level elements use the padding property to create spacing within the element, affecting the space
+between the element's content and its border. Padding properties apply both vertically and horizontally and
+can be set for all four sides individually.
 
 Inline Elements: 
 
-Inline elements can have horizontal padding (left and right), but vertical padding (top and bottom) may not have the same impact. Padding for inline elements often affects the horizontal spacing and the positioning of the content within the element.
+Inline elements can have horizontal padding (left and right), but vertical padding (top and bottom) may not
+have the same impact. Padding for inline elements often affects the horizontal spacing and the positioning
+of the content within the element.
 
 Border:
 ------
 Block-Level Elements: 
 
-Block-level elements can have a border defined using the border property. The border surrounds the entire block and is often used for creating visual boundaries around content.
+Block-level elements can have a border defined using the border property. The border surrounds the entire
+block and is often used for creating visual boundaries around content.
 
 Inline Elements: 
 
-Inline elements can also have borders, but the effect might differ. Borders may not consistently create a clear block-like boundary around inline elements due to their inline flow. The border can be applied to individual sides (e.g., border-left, border-right) to control how it appears in relation to the inline content.
+Inline elements can also have borders, but the effect might differ. Borders may not consistently create a 
+clear block-like boundary around inline elements due to their inline flow. The border can be applied to
+individual sides (e.g., border-left, border-right) to control how it appears in relation to the inline content.
 
-In summary, block-level elements are typically used to create distinct blocks of content with more control over their width, height, margins, padding, and borders. Inline elements, on the other hand, are used for styling inline content within a block-level element and may not have the same level of control over these properties due to their inline flow. However, you can modify the default behavior of elements using CSS to achieve the desired layout and styling.
+In summary, block-level elements are typically used to create distinct blocks of content with more control
+over their width, height, margins, padding, and borders. Inline elements, on the other hand, are used for
+styling inline content within a block-level element and may not have the same level of control over these
+properties due to their inline flow. However, you can modify the default behavior of elements using CSS to
+achieve the desired layout and styling.
 
 
 Inline elements 
@@ -1051,12 +1014,18 @@ border: go into block level element
 12. Box model
     =========
 
-The CSS box model is a container that contains multiple properties including borders, margins, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. 
+The CSS box model is a container that contains multiple properties including borders, margins, padding, and
+the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for
+customizing the layout of different elements. The web browser renders every element as a rectangular box
+according to the CSS box model. 
 
-The CSS box-model and box-sizing are related concepts, but they serve different purposes when it comes to controlling how the dimensions of elements are calculated. Let me explain the difference between them:
+The CSS box-model and box-sizing are related concepts, but they serve different purposes when it comes to
+controlling how the dimensions of elements are calculated. Let me explain the difference between them:
 
-The CSS box model, defines how an element's dimensions are calculated, taking into account the content, padding, border, and margin.
-By default, when you set the width and height properties of an element, you are specifying the dimensions of the content area. The padding, border, and margin are added to these dimensions.
+The CSS box model, defines how an element's dimensions are calculated, taking into account the content,
+padding, border, and margin.
+By default, when you set the width and height properties of an element, you are specifying the dimensions
+of the content area. The padding, border, and margin are added to these dimensions.
 
 .box {
 
@@ -1067,22 +1036,28 @@ By default, when you set the width and height properties of an element, you are 
   margin: 10px;
 }
 
-The total space the .box element occupies on the page is calculated by summing the content width, padding, border, and margin, as described in the previous answer.
+The total space the .box element occupies on the page is calculated by summing the content width, padding,
+border, and margin, as described in the previous answer.
 
 Box-Sizing Property:
 -------------------
 
-The box-sizing property allows you to control how an element's dimensions are calculated, specifically how width and height are interpreted.
+The box-sizing property allows you to control how an element's dimensions are calculated, specifically how
+width and height are interpreted.
 
 The box-sizing property has two possible values:
 
 content-box (default): 
 ---------------------
-This is the default behavior, where width and height represent the dimensions of the content area. Padding, border, and margin are added to these dimensions.
+This is the default behavior, where width and height represent the dimensions of the content area. Padding,
+border, and margin are added to these dimensions.
 
 border-box:
 ---------- 
-With this value, width and height include the content area, padding, and border. The margin is still outside of these dimensions. If you set an element's box-sizing property to border-box, the specified width and height values will include the padding and border. This can be helpful for creating more predictable layouts, as you can work with the total space an element occupies.
+With this value, width and height include the content area, padding, and border. The margin is still outside
+of these dimensions. If you set an element's box-sizing property to border-box, the specified width and
+height values will include the padding and border. This can be helpful for creating more predictable layouts,
+as you can work with the total space an element occupies.
 
 Here's an example of how to use the box-sizing property:
 
@@ -1095,15 +1070,17 @@ Here's an example of how to use the box-sizing property:
   box-sizing: border-box; /* Include padding and border in width and height */
 }
 
-In this case, the specified width and height values will include the padding and border, making it easier to control the overall dimensions of the element while ensuring that the content area remains a consistent size.
+In this case, the specified width and height values will include the padding and border, making it easier to
+control the overall dimensions of the element while ensuring that the content area remains a consistent size.
 
-In summary, the CSS box-model defines the standard model for calculating element dimensions, and the box-sizing property allows you to change how width and height are interpreted, either as content dimensions or including padding and border.
+In summary, the CSS box-model defines the standard model for calculating element dimensions, and the
+box-sizing property allows you to change how width and height are interpreted, either as content dimensions
+or including padding and border.
 
 13) Positions:
     =========
-
-There are several positioning properties in CSS that control how elements are displayed and positioned on the page.
-
+There are several positioning properties in CSS that control how elements are displayed and positioned
+on the page.
 
    1) static :
       ------
@@ -1136,14 +1113,17 @@ There are several positioning properties in CSS that control how elements are di
       
 z-index: 
 ========
-The z-index property is typically used with positioned elements, such as relative,absolute,fixed. It does not have any effect on non-positioned (static) elements.
+The z-index property is typically used with positioned elements, such as relative,absolute,fixed. It does not
+have any effect on non-positioned (static) elements.
 
 - Controls the stacking order of elements. 
 - Elements with higher z-index values appear in front of elements with lower values.
-- If multiple elements have the same z-index, their stacking order is determined by their order in the HTML document. The element that appears later in the document will be on top.
+- If multiple elements have the same z-index, their stacking order is determined by their order in the HTML
+  document. The element that appears later in the document will be on top.
 - The z-index property only works on elements with a position value other than static. 
   So, you need to set element's position property to relative, absolute,fixed for z-index to have effect.
-- Negative values for z-index are allowed, and elements with negative z-index values will be placed  behind elements with positive values.
+- Negative values for z-index are allowed, and elements with negative z-index values will be placed  behind
+  elements with positive values.
 
 
 display: Controls how an element is displayed (e.g., block, inline, flex, grid).
@@ -1187,11 +1167,8 @@ float: none
 -----------
 It is used to remove float effect from an already floated element.
 
-
-
 clear: left | right | both
 --------------------------
-
 It is used to clear the effect of floating on the parent container.
 
 clear: left
@@ -1208,7 +1185,6 @@ It clears the effect of floating left and right on its parent container.
 
 parent to be normal
 -------------------
-
 elementselector::after{
 content: " ",
 display: block,
@@ -1219,13 +1195,17 @@ clear: left
 FLEX
 ====
 
-CSS Flexbox, short for Flexible Box Layout, is a layout model in CSS that allows you to design complex layouts with a more efficient and predictable way than traditional models. It's particularly useful for creating responsive and dynamic page layouts. Flexbox was introduced to address the limitations and complexities of other layout models like floating and positioning.
+CSS Flexbox, short for Flexible Box Layout, is a layout model in CSS that allows you to design complex layouts
+with a more efficient and predictable way than traditional models. It's particularly useful for creating
+responsive and dynamic page layouts. Flexbox was introduced to address the limitations and complexities of
+other layout models like floating and positioning.
 
 Here are some key concepts and properties related to CSS Flexbox:
 
 Flex Container: 
 --------------
-To create a flex layout, you designate an element as a flex container. This is done by setting the display property to flex. All the direct children of the flex container become flex items.
+To create a flex layout, you designate an element as a flex container. This is done by setting the display
+property to flex. All the direct children of the flex container become flex items.
 
 
 .flex-container {
@@ -1234,11 +1214,13 @@ To create a flex layout, you designate an element as a flex container. This is d
 
 Flex Items: 
 ----------
-These are the immediate children of a flex container. They can be arranged horizontally or vertically inside the flex container.
+These are the immediate children of a flex container. They can be arranged horizontally or vertically inside
+the flex container.
 
 Main Axis and Cross Axis:
 ------------------------ 
-Flexbox operates along two axes, the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis is opposite to it.
+Flexbox operates along two axes, the main axis and the cross axis. The main axis is defined by the
+flex-direction property, and the cross axis is opposite to it.
 
 flex-direction: row => sets the main axis horizontally (default).
 flex-direction: column => sets the main axis vertically.
@@ -1264,7 +1246,8 @@ align-items: stretch => stretches items to fill the container's cross-axis.
 
 Flex:
  
-The flex property is used to specify how much a flex item can grow or shrink to fill available space. It's a shorthand property for flex-grow, flex-shrink, and flex-basis.
+The flex property is used to specify how much a flex item can grow or shrink to fill available space. It's a
+shorthand property for flex-grow, flex-shrink, and flex-basis.
 
 .flex-item {
   flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
@@ -1272,14 +1255,17 @@ The flex property is used to specify how much a flex item can grow or shrink to 
 
 GRID
 ====
-In CSS (Cascading Style Sheets), you can create grid layouts using the CSS Grid Layout module. CSS Grid allows you to create two-dimensional grid systems for laying out content on a web page. It provides a powerful and flexible way to design complex layouts, and it's widely supported by modern web browsers.
+In CSS (Cascading Style Sheets), you can create grid layouts using the CSS Grid Layout module. CSS Grid allows
+you to create two-dimensional grid systems for laying out content on a web page. It provides a powerful and
+flexible way to design complex layouts, and it's widely supported by modern web browsers.
 
 Here's a basic overview of how to create a grid layout in CSS:
 
 Creating a Grid Container:
 -------------------------
 
-To start using CSS Grid, you need to create a grid container. This is typically done by selecting an HTML element and setting its display property to "grid" or "inline-grid." For example:
+To start using CSS Grid, you need to create a grid container. This is typically done by selecting an HTML
+element and setting its display property to "grid" or "inline-grid." For example:
 
 .grid-container {
   display: grid;
@@ -1288,7 +1274,9 @@ To start using CSS Grid, you need to create a grid container. This is typically 
 Defining Grid Rows and Columns:
 -------------------------------
 
-After creating a grid container, you can define the rows and columns of the grid. You can specify the size of rows and columns using various units like pixels, percentages, or the "fr" unit (fractional unit). For example, to create a grid with three rows and three columns of equal size:
+After creating a grid container, you can define the rows and columns of the grid. You can specify the size 
+of rows and columns using various units like pixels, percentages, or the "fr" unit (fractional unit).
+For example, to create a grid with three rows and three columns of equal size:
 
 .grid-container {
   display: grid;
@@ -1298,7 +1286,8 @@ After creating a grid container, you can define the rows and columns of the grid
 
 Placing Items:
 -------------
-You can place items within the grid using properties like grid-row and grid-column or shorthand grid-area. For example, to place an item in the second row and third column:
+You can place items within the grid using properties like grid-row and grid-column or shorthand grid-area.
+ For example, to place an item in the second row and third column:
 
 .grid-item {
   grid-row: 2;
@@ -1307,7 +1296,8 @@ You can place items within the grid using properties like grid-row and grid-colu
 
 Grid Gap:
 --------
-You can add gaps between rows and columns using the grid-gap property. For example, to add a 10px gap between rows and columns:
+You can add gaps between rows and columns using the grid-gap property. For example, to add a 10px gap between
+rows and columns:
 
 .grid-container {
   grid-gap: 10px;
@@ -1316,7 +1306,8 @@ You can add gaps between rows and columns using the grid-gap property. For examp
 Grid Template Areas:
 -------------------
 
-CSS Grid also allows you to define layouts using named grid areas, making it easier to create complex designs. For example:
+CSS Grid also allows you to define layouts using named grid areas, making it easier to create complex designs.
+ For example:
 
 
 .grid-container {
@@ -1341,7 +1332,8 @@ CSS Grid also allows you to define layouts using named grid areas, making it eas
 
 Responsive Grids:
 ----------------
-CSS Grid is well-suited for creating responsive layouts. You can use media queries to adjust the grid layout based on the screen size.
+CSS Grid is well-suited for creating responsive layouts. You can use media queries to adjust the grid layout
+based on the screen size.
 
 Here's a basic example of an HTML structure with a CSS Grid:
 
@@ -1368,7 +1360,8 @@ Here's a basic example of an HTML structure with a CSS Grid:
 
 This will create a 3x2 grid of items with a 10px gap between them.
 
-CSS Grid Layout is a powerful tool for creating complex, responsive layouts in web design. It provides more control and flexibility compared to older layout methods like floats or flexbox.
+CSS Grid Layout is a powerful tool for creating complex, responsive layouts in web design. It provides more
+control and flexibility compared to older layout methods like floats or flexbox.
 
 How to make center an element using grid
 ----------------------------------------
@@ -1393,7 +1386,8 @@ How to make center an element using grid
 
 15. CSS units
     =========
-CSS uses various units of measurement to define the size, position, and spacing of elements on a web page. These units allow web developers to create responsive.
+CSS uses various units of measurement to define the size, position, and spacing of elements on a web page.
+These units allow web developers to create responsive.
 
 Here are some common CSS units:
 
@@ -1404,7 +1398,8 @@ Here are some common CSS units:
 
   ex: px, cm, mm, in, ch
 
-These units are absolute and not recommended for web design because they do not scale well with different devices and screen sizes.
+These units are absolute and not recommended for web design because they do not scale well with different
+devices and screen sizes.
 
 Pixels (px):
 -----------
@@ -1421,7 +1416,8 @@ element {
   margin: 1cm; /* 1 centimeter */
 }
 
-Choose the CSS unit that best suits your design and layout needs, keeping in mind that relative units (like em, rem, and percentages) are often preferred for responsive web design.
+Choose the CSS unit that best suits your design and layout needs, keeping in mind that relative units
+(like em, rem, and percentages) are often preferred for responsive web design.
 
 2)Relative Units
   --------------
@@ -1433,7 +1429,8 @@ Choose the CSS unit that best suits your design and layout needs, keeping in min
 
 Percentage (%):
 --------------
-Percentages are relative units that refer to a percentage of the parent element's property (e.g., width, height). It depends upon parent length.
+Percentages are relative units that refer to a percentage of the parent element's property 
+(e.g., width, height). It depends upon parent length.
 
 Commonly used for creating responsive layouts.
 
@@ -1489,9 +1486,10 @@ element {
 
 Media queries
 -------------
--Media queries are essential for creating responsive web designs that adapt to various devices   and screen sizes, providing a better user experience.
+-Media queries are essential for creating responsive web designs that adapt to various devices  and screen
+sizes, providing a better user experience.
 
--Media query is a technic of applying different styles to an element/webpage based on certain    condition.
+-Media query is a technic of applying different styles to an element/webpage based on certain condition.
  
 -They are commonly used to provide different styles for different devices by their features 
 like type, width, height, orientaion.
@@ -1511,7 +1509,8 @@ In this example, the media query targets screens with a width of 600 pixels or l
 
 2) Media Types:
    ----------- 
-You can specify different media types (screen, print, speech) to apply styles in different contexts. The most commonly used media type is screen.
+You can specify different media types (screen, print, speech) to apply styles in different contexts. The most
+commonly used media type is screen.
 
 -screen
 -print
@@ -1519,7 +1518,8 @@ You can specify different media types (screen, print, speech) to apply styles in
 
 3) Media Features:
    -------------- 
-Media features like max-width, min-width, min-height, max-height, orientation,and many others are used to specify the conditions under which the CSS rules should be applied.
+Media features like max-width, min-width, min-height, max-height, orientation,and many others are used to
+specify the conditions under which the CSS rules should be applied.
 
 -min-width
 -max-width
@@ -1559,7 +1559,6 @@ To apply styles based on the device's orientation (portrait or landscape).
 
 4) Operators (Combining Conditions) 
    --------------------------------
-
 You can combine multiple conditions using and, or, not to create more complex media queries.
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1572,7 +1571,6 @@ Media queries are essential for creating responsive web designs that adapt to va
 
 17. CSS Animations
     ==============
-
 Animation is a process of changing elements style in a given duration.
 
 we can apply multiple css styles to an element during given duration by using @keyframe.
@@ -1607,7 +1605,6 @@ properties on an element
 
 CSS Transform property
 ======================
-
 2d (x,y)
 3d (x,y,z)
 
@@ -1676,9 +1673,6 @@ ex
   transform: skewX(30deg);
 }
 
-         
-
-
 
 18. shadow
     ======
@@ -1709,7 +1703,6 @@ IMP POINTS
 
 3) shadow
    ------
-
    box-shadow:
    ----------
    It will add shadow to html element.
@@ -1945,7 +1938,7 @@ display: table-column;
 display: table-column-group
 
 
-=>symantic elements
+=>semantic elements
 
 =>article | aside
 
@@ -1959,7 +1952,7 @@ margin-bottom: 1em;
 margin-left: 40px;
 margin-right: 40px
 
-=>figcation
+=>figCaption
 
 display: block;
 
@@ -2025,27 +2018,34 @@ text-decoration: underline;
 img tag
 =======
 
-The <img> tag is indeed an inline-level element by default in HTML. However, it has a unique property compared to other inline-level elements: it has width and height attributes, which are part of the HTML specification. These attributes allow you to specify the dimensions of the image directly in the HTML.
+The <img> tag is indeed an inline-level element by default in HTML. However, it has a unique property compared
+to other inline-level elements: it has width and height attributes, which are part of the HTML specification.
+These attributes allow you to specify the dimensions of the image directly in the HTML.
 
 
 <img src="example.jpg" width="300" height="200">
 
-The width and height attributes in this case allow you to set the dimensions of the image directly. When you use these attributes, they will override any CSS styles that try to control the image's dimensions. This is a specific feature of the <img> tag that's not applicable to other inline-level elements.
+The width and height attributes in this case allow you to set the dimensions of the image directly. When you
+use these attributes, they will override any CSS styles that try to control the image's dimensions. This is
+a specific feature of the <img> tag that's not applicable to other inline-level elements.
 
-While the <img> tag is an inline-level element by default, it's often treated differently due to its special purpose. It can be displayed inline or block-level depending on the surrounding elements and CSS rules, and it allows you to set dimensions directly via attributes for ease of use when working with images.
+While the <img> tag is an inline-level element by default, it's often treated differently due to its special
+purpose. It can be displayed inline or block-level depending on the surrounding elements and CSS rules, and
+it allows you to set dimensions directly via attributes for ease of use when working with images.
 
-
-
-No, the border-box value for the CSS box-sizing property does not include margins. When you set an element's box-sizing to border-box, it means that the total width and height of the element includes the padding and border, but not the margin.
+No, the border-box value for the CSS box-sizing property does not include margins. When you set an element's
+box-sizing to border-box, it means that the total width and height of the element includes the padding and
+border, but not the margin.
 
 The box-sizing property has two possible values:
 
-content-box (default): This value includes only the element's content in its width and height calculations. Padding, border, and margin are added to the specified width and height.
+content-box (default): This value includes only the element's content in its width and height calculations.
+Padding, border, and margin are added to the specified width and height.
 
-border-box: This value includes the element's content, padding, and border in its width and height calculations. Margin is still not included in these calculations.
+border-box: This value includes the element's content, padding, and border in its width and height calculations.
+Margin is still not included in these calculations.
 
 Here's a visual representation of the difference:
-
 
 /* Using content-box (default) */
 box-sizing: content-box;
@@ -2064,7 +2064,8 @@ border: 10px solid black;
 margin: 30px;
 /* Total width of the element = 200px */
 /* Total height of the element = 0 (no content height specified) */
-So, border-box includes the padding and border in the width and height calculations, but margins are always added on the outside and not included in those calculations.
+So, border-box includes the padding and border in the width and height calculations, but margins are always
+added on the outside and not included in those calculations.
 
 Margin Collapse
 ---------------

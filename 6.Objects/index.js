@@ -229,8 +229,8 @@
 // ***interview question**
 
 // console.log(x)  //x is not defined (it is not in the memory)
-// x = 100  // here we did't use var,let,const keywords
-// console.log(x)
+x = 100  // here we did't use var,let,const keywords
+console.log(x) //100
 
 // ***date object ***
 
@@ -307,3 +307,18 @@
 // // //with string literals
 
 // console.log(`Hi ${name} how are you ? age is ${age}`)
+
+
+
+
+// var obj = {
+//     name: 'sachin',
+//     age: 40,
+//     play: function test() {
+//         console.log('play')
+//     }
+// }
+
+// console.log(obj['name'])
+// console.log(obj['age'])
+

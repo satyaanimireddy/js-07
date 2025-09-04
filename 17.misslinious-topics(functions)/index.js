@@ -87,12 +87,22 @@
 
 // function recursion:
 
+// function factorial(n) {
+//     if (n <= 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1)
+//     }
+// }
+// let result = factorial(5)
+// console.log(result);
+
 function factorial(n) {
     if (n <= 0) {
-        return 1;
+        return 1
     } else {
         return n * factorial(n - 1)
     }
 }
-let result = factorial(5)
-console.log(result);
+let res = factorial(5)
+console.log(res);

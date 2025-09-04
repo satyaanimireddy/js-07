@@ -93,11 +93,11 @@ page after a specified time interval (in this case, 5 seconds).
 HTML Attributes
 ---------------
 
-Html attributes are the properties of html element and it is used to give extra information  about element to
+Html attributes are the properties of html element and it is used to give extra information about element to
 the browser. Every attribute will be in the key value pair.
 
 
-Block-level abd Inline elements
+Block-level and Inline elements
 -------------------------------
 
 -A block-level element always starts on a new line and takes up the full width available.
@@ -228,7 +228,8 @@ HTML Elements
 6) Button element
    ==============
 
-  - The <button> tag in HTML is used to define the clickable button. <button> tag is used to           submit the content. The images and text content can use inside <button> tag.
+  - The <button> tag in HTML is used to define the clickable button. <button> tag is used to submit the content.
+   The images and text content can use inside <button> tag.
 
     Attributes
     ----------
@@ -252,13 +253,10 @@ HTML Elements
 
    Attributes
    ----------
-
            width, 
            color, 
            size,
            align.
-
-
 
 9) Center element
    ==============
@@ -300,31 +298,27 @@ HTML Elements
 
    Note:
    =====
-
-  - Div and Span Tags: These are generic containers that can be used to group and style content.   <div> is a block-level element, and <span> is an inline element.
+  - Div and Span Tags: These are generic containers that can be used to group and style content.
+   <div> is a block-level element, and <span> is an inline element.
 
   - <div>This is a block-level container.</div>
 
   - <span>This is an inline container.</span>
 
-
-
 13) Formatting Elements
     ===================
-
-  
   Formatting elements were designed to display special types of text with css styles:
 
   Bold text: <b> or <strong>
   --------------------------
-
   HTML5 provides two tags to make text bold: <b> and <strong>.
-  Both tags have the same effect of making the enclosed text bold, but <strong> is preferred because it indicates that the text is important for semantic purposes.
+  Both tags have the same effect of making the enclosed text bold, but <strong> is preferred because it
+  indicates that the text is important for semantic purposes.
 
   Italicized text: <i> or <em>
   ----------------------------
-
-  HTML5 provides two tags to make text italic: <i> and <em>. Both tags have the same effect of making the enclosed text italic, but <em> is preferred because it indicates that the text has  emphasis for semantic purposes.
+  HTML5 provides two tags to make text italic:<i> and <em>.Both tags have the same effect of making the enclosed
+  text italic,but <em> is preferred because it indicates that the text has emphasis for semantic purposes.
 
   Underlined text: <u>
   --------------------
@@ -333,26 +327,27 @@ HTML Elements
 
   Strike-through text: <del> or <s>
   ---------------------------------
-
-  HTML5 provides two tags to make text strike-through: <s> and <del>. Both tags have the same effect of making the enclosed text strike-through, but <del> is preferred because it indicates that the text has been deleted for semantic purposes.
+  HTML5 provides two tags to make text strike-through: <s> and <del>. Both tags have the same effect of making
+  the enclosed text strike-through, but <del> is preferred because it indicates that the text has been deleted
+  for semantic purposes.
 
   Superscript and subscript text: <sup> or <sub>
   ----------------------------------------------
-
   HTML5 provides two tags to make text superscript and subscript: <sup> and <sub>, respectively.
 
   u and ins
   ---------
   HTML5 provides two tags u and ins. Both tags have the same effect of making underline.
-  <ins> is used for semantic purpose. The <ins> tags means content inserted after it was first   published. The <u> tag is simply for underlining and has no meaning.
+  <ins> is used for semantic purpose. The <ins> tags means content inserted after it was first published.
+  The <u> tag is simply for underlining and has no meaning.
 
   small vs big
   ------------
-  In HTML, the <small> tag is used to emphasize small text or information that is of secondary significance, such as copyright and legal disclaimer.
+  In HTML, the <small> tag is used to emphasize small text or information that is of secondary significance,
+  such as copyright and legal disclaimer.
   The <small> tag can be used to mark up a copyright notice or license agreement.
 
   HTML <big> tag was used to increase the text font size one level bigger than the document's base font size.
-
 
   <b> - Bold text
   <strong> - Important text
@@ -370,7 +365,6 @@ HTML Elements
 
 14) Table elements
     ==============
-
   <table>	- Defines a table
   <caption>     - Defines a table caption
   <thead>	- Groups the header content in a table
@@ -433,7 +427,6 @@ HTML Elements
 
    vertical alignment (text in table)
    ----------------------------------
-
    The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
 
    By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
@@ -446,38 +439,38 @@ Form element is used to take input from an user to send data to server and db.
 
 Form Elemenets:
 --------------
-
 The HTML <form> element can contain one or more of the following form elements.
 
   <form>	=> Defines an HTML form for user input.
   <input>	=> Defines an input control.
   <label>	=> Defines a label for an <input> element.
   <textarea>	=> Defines a multiline input control (text area).
-The <textarea> element is often used in a form, to collect user inputs like comments or reviews.The size of a text area is specified by the cols and rows attributes.
+The <textarea> element is often used in a form, to collect user inputs like comments or reviews.The size of a
+ text area is specified by the cols and rows attributes.
   <button>	=> Defines a clickable button.
   <fieldset>	=> Groups related elements in a form.
   <legend>	=> Defines a caption for a <fieldset> element.
   <select>	=> Defines a drop-down list.
-  <option>	=> Defines an option in a drop-down list.(The <option> tags inside the <select> element define the available options in the drop-down list).
+  <option>	=> Defines an option in a drop-down list.(The <option> tags inside the <select> element define the
+   available options in the drop-down list).
   <optgroup>	=> Defines a group of related options in a drop-down list.
   <datalist>	=> Specifies a list of pre-defined options for input controls.
 
--The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will  see a drop-down list of pre-defined options as they input data.
+-The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will  see a
+ drop-down list of pre-defined options as they input data.
 
--The <datalist> element's id attribute must be equal to the <input> element's list attribute (this  binds them together).
+-The <datalist> element's id attribute must be equal to the <input> element's list attribute (this  binds
+ them together).
   
 
 Form attributes:
 ----------------
-
 -autocomplete: 'on' (in form opening tag).
 -novalidate => form-data (input) should not be validated when submitted.
 -onSubmit: form data will be submited when click on submit button.
 
-
 Input element Attributes
 ------------------------
-
   Input element attributes
   ------------------------
   1.type:  text | password | email | button | radio | checkbox | number | color | date | reset | submit | tel | range | time | month
@@ -493,21 +486,15 @@ Input element Attributes
   8.disabled:  The disabled attribute specifies that the element should be disabled. The disabled attribute can be set to keep a user from using the < input > element until some other condition has been fulfilled.
   9.readonly: The readonly attribute specifies that an input field is read-only. A read-only input field cannot be modified. A form will still submit an input field that is readonly, but will not submit an input field that is disabled.
 
-
-   
 Note:
 -----
-
 - The default width of an input field is 20 characters.
 - The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
 - Name attribute should be same value for all radio buttons to select any one of them.
 - The <input type="submit"> defines button for submitting the form data to form-handler(function).
 
-
-
 16) marquee element
     ===============
-
 The <marquee> tag is a container for creating scrollable text or images within a web page from either left to right or vice versa, or top to bottom or vice versa. But this tag has been deprecated in the new version of HTML, i.e., HTML 5
 
   Attributes
@@ -521,11 +508,8 @@ The <marquee> tag is a container for creating scrollable text or images within a
   bgcolor
   loop : times of loop (The default value of loop is INFINITE)
 
-  
-
   17) symantic elements
     =================
-
 Semantic elements = elements with a meaning.
 
 A semantic element clearly describes its meaning to both the browser and the developer.
@@ -552,8 +536,6 @@ Examples of semantic elements: <form>, <table>, and <article> - Clearly defines 
 
 Note: All semantic tags contains no default styles as like div.
 
-
-
 18) iframe
     ======
 
@@ -578,7 +560,6 @@ The iframe in HTML stands for Inline Frame.
 
 19) Media Elements
     ==============
-
  - HTML5 introduces media elements like <audio> and <video> for displaying and playing audio and video content.
  - The <video> tag is used to embed video content in a document, such as some videos. 
  - The <audio> tag is used to embed sound content in a document, such as some audios.

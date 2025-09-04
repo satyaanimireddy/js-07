@@ -1,7 +1,4 @@
 
-
-
-
 // 1.arthimatic operators
 
 // var x = 20

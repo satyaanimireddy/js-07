@@ -1,5 +1,6 @@
 // // console.log(a)
 // // var a = 'sachin'
+
 // let a = 'sachin'
 // console.log(a)
 
@@ -64,7 +65,7 @@
 // // declaration()
 // console.log(declaration)
 
-//var let const diff
+//var let const difference
 
 // re-declaration
 

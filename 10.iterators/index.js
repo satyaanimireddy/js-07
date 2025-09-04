@@ -7,9 +7,9 @@
 
 // var iterable = [1, 2, 3, 4, 5]
 // console.log(iterable);
-
-// without using for of loop
+// // // without using for of loop:-
 // var iteratorObj = iterable[Symbol.iterator]()
+// console.log(iteratorObj);
 // console.log(iteratorObj.next());
 // console.log(iteratorObj.next());
 // console.log(iteratorObj.next());
@@ -24,7 +24,7 @@
 
 // ** how to convert non-iterable data structure into iterable data structure **
 // var person = {
-//     faname: 'virat',
+//     fname: 'virat',
 //     lName: 'kohli'
 // }
 
@@ -53,3 +53,15 @@
 // for (var value of person) {
 //     console.log(value);
 // }
+
+// let person = {
+//     fName: "kohli",
+//     LName: "virat"
+// }
+
+// let iteratorObj = person[Symbol.iterator] = function () {
+//     let properties = Object.keys(person)
+//     console.log(properties);
+// }
+
+// console.log(iteratorObj.next());

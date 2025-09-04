@@ -16,12 +16,12 @@
 
 // parameters vs arguments
 
-// var test = (a, b, c) => {
-//     console.log(a)
-//     console.log(b)
-//     console.log(c)
-// }
-// test(1, 2, 3)
+var test = (a, b, c) => {
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}
+test(1, 2, 3)
 
 //default parameters:
 
@@ -33,6 +33,7 @@
 //     console.log(e)
 //     console.log(f)
 // }
+// // test()
 // test(10, true, undefined, null, undefined, null)
 
 // Varying pf params vs arguments:
@@ -91,16 +92,19 @@
 //     // console.log(rest[3])
 //     // console.log(rest[4])
 
-//     //by using for of loop
-//     // for (var value of rest) {
+//     // // //by using for of loop
+//     // for (var value in rest) {
 //     //     console.log(value)
 //     // }
+//     // // //by using for in loop
+//     // for (var key in rest) {
+//     //     console.log(rest[key])
+//     // }
 
-//     //
 //     // var sum = 0
 //     // for (var value of rest) {
 //     //     console.log(value)
-//     //     sum += value
+//     //     sum = sum + value // or //sum += value
 //     // }
 //     // return sum
 

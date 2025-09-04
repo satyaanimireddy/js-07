@@ -13,8 +13,8 @@
 //     console.log('distinction')
 // }
 
-//switch:(it will not work for step values)
-// below code is not work
+// //switch:(it will not work for step values):-
+// //below code is not work:-
 // switch (marks) {
 //     case marks < 35:
 //         console.log('failed')
@@ -90,7 +90,7 @@
 //         console.log('Tuesday')
 //         break;
 //     case 3:
-//         console.log('Wednensday')
+//         console.log('Wednesday')
 //         break;
 //     case 4:
 //         console.log('Thursday')
